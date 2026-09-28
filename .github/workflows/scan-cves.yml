@@ -1,0 +1,114 @@
+name: Scan cvelistV5 and GHSAs for OpenAI-mentioned vulnerabilities
+
+on:
+  schedule:
+    # Every 2 hours
+    - cron: "17 */2 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: scan-cves
+  cancel-in-progress: false
+
+permissions:
+  contents: write       # commit state, push branches
+  pull-requests: write  # open PRs
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # need full history to create branches off main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml vulncheck-sdk
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run scanner
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python .github/scripts/scan_cves.py
+
+      - name: Commit state changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain state/)" ]]; then
+            git add state/
+            git commit -m "chore(state): update seen.json [skip ci]"
+            git push
+          else
+            echo "No state changes to commit."
+          fi
+
+      - name: Recheck reserved CVEs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python .github/scripts/recheck_reserved.py
+
+      - name: Scan GHSAs (and recheck GHSA-only entries for CVE assignment)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python .github/scripts/scan_ghsas.py
+
+      - name: Commit GHSA state changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain state/)" ]]; then
+            git add state/
+            git commit -m "chore(state): update GHSA scan state [skip ci]"
+            git push
+          else
+            echo "No GHSA state changes to commit."
+          fi
+
+      - name: Mark VulnCheck KEV (known-exploited) CVEs
+        # Authoritative enrichment of existing records: pull the VulnCheck KEV
+        # index and mark tracked CVEs that are known-exploited. Commits to main
+        # directly (like the CVSS backfill). No-ops if the secret
+        # is absent, so forks/PRs without the token don't fail.
+        env:
+          VULNCHECK_API_TOKEN: ${{ secrets.VULNCHECK_API_TOKEN }}
+        run: python .github/scripts/scan_kev.py
+
+      - name: Commit KEV markers (if any)
+        # No [skip ci]: touches cves/, so render-readme.yml regenerates README.md
+        # (incl. the KEV column) + the cves.yaml aggregate.
+        run: |
+          if [[ -n "$(git status --porcelain cves/)" ]]; then
+            git add cves/
+            git commit -m "chore: sync VulnCheck KEV markers"
+            git push
+          else
+            echo "No KEV marker changes."
+          fi
+
+      - name: Backfill missing CVSS from NVD
+        run: python .github/scripts/backfill_cvss.py
+
+      - name: Commit CVSS backfill (if any)
+        # No [skip ci]: this touches cves/, so render-readme.yml must run to
+        # regenerate README.md + the cves.yaml aggregate from the new scores.
+        run: |
+          if [[ -n "$(git status --porcelain cves/)" ]]; then
+            git add cves/
+            git commit -m "chore: backfill CVSS scores from NVD"
+            git push
+          else
+            echo "No CVSS backfill needed."
+          fi

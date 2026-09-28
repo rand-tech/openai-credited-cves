@@ -1,0 +1,43 @@
+# Keywords that trigger a candidate PR when found anywhere in a cvelistV5 record.
+#
+# Matching is case-insensitive substring. Edit this file to add or remove names.
+# The scanner reads it on every run, so changes take effect on the next scheduled scan.
+#
+# Tip: keep names specific. "Smith" alone would match thousands of CVEs.
+# "Jane Smith" is fine. Single-word names should be rare and distinctive
+# (e.g. "Calif.io").
+#
+# Deliberately NOT listed: the `openai.com` email domain. scan_lore.py treats
+# any dotted single word as a domain and matches it in attribution trailers,
+# and OpenAI engineers sign off ordinary (non-security) kernel and git patches
+# with @openai.com addresses. Match researchers by name instead.
+
+keywords:
+  # Organizations. The bare word is used by the CVE/GHSA scanners (many CNA
+  # credits read just "OpenAI"); scan_lore.py ignores single words.
+  - OpenAI
+
+  # Credit phrasings (also matched in lore attribution trailers, e.g.
+  # "Reported-by: OpenAI Security Research")
+  - OpenAI Security Research
+  - Codex Security
+  - in collaboration with OpenAI
+  - in partnership with OpenAI
+
+  # Researchers
+  - Kyle Zeng
+  - Oleg Boiko
+  - Amy Burnett
+  - Chris Jarrett-Davies
+  - Khai Tran
+  - Kostya Kortchinsky
+  - Matthew Bryant
+
+# GitHub usernames for matching against a GHSA's structured `credits[*].user.login`.
+#
+# When the GHSA scanner encounters a structured credit pointing at one of
+# these accounts, it treats the advisory as a hit even if the prose body
+# never mentions "OpenAI". The full handle should be listed (no
+# wildcards). Matching is case-insensitive. Leave the list empty to disable
+# username-based matching and rely solely on the text-keyword scan above.
+github_usernames: []

@@ -1,0 +1,1273 @@
+- cve: CVE-2026-97177
+  ghsa: null
+  date: '2026-09-24'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.6
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-97177
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-96445
+  ghsa: null
+  date: '2026-09-23'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.8
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-96445
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-94001
+  ghsa: null
+  date: '2026-09-19'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-94001
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-90997
+  ghsa: null
+  date: '2026-09-17'
+  vendor: Keycloak
+  product: Keycloak
+  cvss: 7.4
+  credit: >-
+    Red Hat would like to thank Bruno Oliveira of IBM in collaboration with OpenAI for reporting this
+    issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-90997
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18212
+  ghsa: null
+  date: '2026-09-16'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.4
+  cvss: 7.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18212
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-92054
+  ghsa: null
+  date: '2026-09-15'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-92054
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18922
+  ghsa: null
+  date: '2026-09-07'
+  vendor: Red Hat
+  product: Red Hat Directory Server 11.7 E4S for RHEL 8
+  cvss: 9.8
+  credit: >-
+    Red Hat would like to thank Chris Jarrett-Davies (OpenAI Security Research) for reporting this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18922
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-70551
+  ghsa: null
+  date: '2026-08-25'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.5
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-70551
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-70550
+  ghsa: null
+  date: '2026-08-25'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-70550
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-70548
+  ghsa: null
+  date: '2026-08-25'
+  vendor: jfrog
+  product: artifactory
+  cvss: 3.5
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-70548
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-69104
+  ghsa: null
+  date: '2026-08-25'
+  vendor: jfrog
+  product: artifactory
+  cvss: 7.6
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-69104
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74630
+  ghsa: null
+  date: '2026-08-22'
+  vendor: Linux
+  product: Linux
+  cvss: 7.8
+  credit: Bug found and triaged by OpenAI Security Research and validated by Trail of Bits
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74630
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-49428
+  ghsa: null
+  date: '2026-08-19'
+  vendor: FreeBSD
+  product: FreeBSD
+  cvss: 8.4
+  credit: Chris Jarrett-Davies of the OpenAI Codex Security Team
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-49428
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-49427
+  ghsa: null
+  date: '2026-08-19'
+  vendor: FreeBSD
+  product: FreeBSD
+  cvss: 8.8
+  credit: Chris Jarrett-Davies of the OpenAI Codex Security Team
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-49427
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74984
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 6.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74984
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74944
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74944
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74938
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74938
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74937
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74937
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-74936
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-74936
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-19608
+  ghsa: null
+  date: '2026-08-18'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 5.3
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-19608
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16238
+  ghsa: null
+  date: '2026-08-13'
+  vendor: n/a
+  product: PostgreSQL
+  cvss: 8.8
+  credit: >-
+    The PostgreSQL project thanks Amy Burnett (OpenAI Codex Security) for reporting this problem.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16238
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-14680
+  ghsa: null
+  date: '2026-08-13'
+  vendor: n/a
+  product: PostgreSQL
+  cvss: 8.8
+  credit: >-
+    The PostgreSQL project thanks Amy Burnett (OpenAI Codex Security) for reporting this problem.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-14680
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-14669
+  ghsa: null
+  date: '2026-08-13'
+  vendor: n/a
+  product: PostgreSQL
+  cvss: 8.8
+  credit: >-
+    The PostgreSQL project thanks Hcamael, Amjad Shahzad, Tomer Fichman, Zheng Yu, Amy Burnett (OpenAI
+    Codex Security), Rick de Jager, Heewon Song, Sylvie Mayer, Aleksander Alekseev, and Hillai Ben Sasson
+    for reporting this problem.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-14669
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-73432
+  ghsa: null
+  date: '2026-08-12'
+  vendor: vulnerability-lookup
+  product: vulnerability-lookup
+  cvss: 5.1
+  credit: >-
+    openai/gpt-5.5-cyber-preview (reasoning level: high) | EUVD @ ENISA Team | Cedric Bonhomme | Alexandre
+    Dulaunoy
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-73432
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-73431
+  ghsa: null
+  date: '2026-08-12'
+  vendor: vulnerability-lookup
+  product: vulnerability-lookup
+  cvss: 8.8
+  credit: >-
+    openai/gpt-5.5-cyber-preview (reasoning level: high) | EUVD @ ENISA Team | Cedric Bonhomme | Alexandre
+    Dulaunoy
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-73431
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-73405
+  ghsa: null
+  date: '2026-08-12'
+  vendor: vulnerability-lookup
+  product: vulnerability-lookup
+  cvss: 5.3
+  credit: >-
+    openai/gpt-5.5-cyber-preview (reasoning level: high) | EUVD @ ENISA Team | Cedric Bonhomme | Alexandre
+    Dulaunoy
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-73405
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-73374
+  ghsa: null
+  date: '2026-08-12'
+  vendor: vulnerability-lookup
+  product: vulnerability-lookup
+  cvss: 6.1
+  credit: >-
+    openai/gpt-5.5-cyber-preview (reasoning level: high) | EUVD @ ENISA Team | Cedric Bonhomme | Alexandre
+    Dulaunoy
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-73374
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-70547
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-70547
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-69105
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.1
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-69105
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68759
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 7.2
+  credit: OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68759
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68758
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68758
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68755
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68755
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68754
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68754
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68753
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 5.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68753
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-68752
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 7.2
+  credit: OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-68752
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66384
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 5.3
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66384
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66382
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66382
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66381
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 5.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66381
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66380
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66380
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66379
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66379
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66378
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 4.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66378
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66377
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 5.3
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66377
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66375
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.1
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66375
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66016
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.7
+  credit: Matthew Bryant | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66016
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65926
+  ghsa: null
+  date: '2026-08-12'
+  vendor: jfrog
+  product: artifactory
+  cvss: 3.1
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65926
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16443
+  ghsa: null
+  date: '2026-08-05'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.4
+  cvss: 7.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16443
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16442
+  ghsa: null
+  date: '2026-08-05'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.4
+  cvss: 7.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16442
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16100
+  ghsa: null
+  date: '2026-08-05'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16100
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16071
+  ghsa: null
+  date: '2026-08-05'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.4
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16071
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18569
+  ghsa: null
+  date: '2026-08-04'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 3.7
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18569
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18651
+  ghsa: null
+  date: '2026-08-03'
+  vendor: Red Hat
+  product: Red Hat Directory Server 11
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Andrew Rukin (Arenadata) and Chris Jarrett-Davies (OpenAI Security Research)
+    for reporting this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18651
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18573
+  ghsa: null
+  date: '2026-08-02'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18573
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18572
+  ghsa: null
+  date: '2026-08-02'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18572
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18570
+  ghsa: null
+  date: '2026-08-02'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18570
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18218
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 4.2
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18218
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18215
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 6.8
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18215
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18214
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 6.8
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18214
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18211
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 4.2
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18211
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18208
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18208
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18206
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 3.7
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18206
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18203
+  ghsa: null
+  date: '2026-07-31'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18203
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-58222
+  ghsa: null
+  date: '2026-07-30'
+  vendor: Red Hat
+  product: Red Hat Enterprise Linux 10
+  cvss: 8.8
+  credit: >-
+    Red Hat would like to thank Andrew Tridgell (Samba Team), Bin Luo (University of Electronic Science
+    and Technology of China (UESTC)), OpenAI Security Research, and Tristan Madani (Talence Security)
+    for reporting this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-58222
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18207
+  ghsa: null
+  date: '2026-07-29'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18207
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-18201
+  ghsa: null
+  date: '2026-07-29'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 5.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-18201
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66018
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66018
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66015
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 7.2
+  credit: Amy Burnett | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66015
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-66014
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.8
+  credit: Amy Burnett | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66014
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65925
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Matthew Bryant | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65925
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65924
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Amy Burnett | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65924
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65923
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.8
+  credit: Khai Tran | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65923
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65921
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.8
+  credit: Matthew Bryant | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65921
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65618
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 6.5
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65618
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65617
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.8
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65617
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-65616
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.8
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-65616
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-42017
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.8
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-42017
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-42016
+  ghsa: null
+  date: '2026-07-27'
+  vendor: jfrog
+  product: artifactory
+  cvss: 8.1
+  credit: Kostya Kortchinsky | OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-42016
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16410
+  ghsa: null
+  date: '2026-07-21'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16410
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16409
+  ghsa: null
+  date: '2026-07-21'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 7.5
+  credit: Artur Cygan of Trail of Bits in partnership with OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16409
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16369
+  ghsa: null
+  date: '2026-07-21'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16369
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16355
+  ghsa: null
+  date: '2026-07-21'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 9.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16355
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16108
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 4.3
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16108
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16104
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 4.3
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16104
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16093
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16093
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16089
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16089
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-16072
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 4.9
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-16072
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-15943
+  ghsa: null
+  date: '2026-07-17'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 5.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-15943
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-15945
+  ghsa: null
+  date: '2026-07-16'
+  vendor: Red Hat
+  product: Red Hat build of Keycloak 26.6
+  cvss: 4.3
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-15945
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-11564
+  ghsa: null
+  date: '2026-07-03'
+  vendor: curl
+  product: curl
+  cvss: 9.1
+  credit: Filipe Casal of Trail of Bits in collaboration with OpenAI | Stefan Eissing
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-11564
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-42530
+  ghsa: null
+  date: '2026-06-17'
+  vendor: F5
+  product: NGINX Open Source
+  cvss: 8.1
+  credit: >-
+    "F5 acknowledges Trung Nguyen (@everping) of CyStack, Zhenpeng (Leo) Lin (depthfirst), Evan Hellman
+    (@xintenseapple) of Trail of Bits in collaboration with OpenAI, AntAISecurityLab, and Nebula Security
+    (@nebusecurity) for bringing this issue to our attention and following the highest standards of coordinated
+    disclosure."
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-42530
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-49975
+  ghsa: null
+  date: '2026-06-08'
+  vendor: Apache Software Foundation
+  product: Apache HTTP Server
+  cvss: 7.5
+  credit: Quang Luong of Calif.IO in collaboration with OpenAI Codex
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-49975
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-8390
+  ghsa: null
+  date: '2026-05-12'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 7.3
+  credit: OpenAI Preparedness, Bill Demirkapi
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-8390
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-6385
+  ghsa: null
+  date: '2026-04-15'
+  vendor: Red Hat
+  product: Lightspeed Core
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Quang Luong (Calif.io in collaboration with OpenAI Codex) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-6385
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35436
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 5.3
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35436
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35435
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 4.3
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35435
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35434
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 4.2
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35434
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35433
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 5.0
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35433
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35432
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 5.3
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35432
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35431
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 5.4
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35431
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2025-35430
+  ghsa: null
+  date: '2025-09-17'
+  vendor: CISA
+  product: Thorium
+  cvss: 5.0
+  credit: ', OpenAI Security Research'
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2025-35430
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
