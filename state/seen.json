@@ -1,4 +1,9 @@
 {
   "last_fetch_timestamp": "2026-10-15T11:26:12.562Z",
-  "seen_cve_ids": []
+  "last_ghsa_modified": "2026-10-10T00:30:32Z",
+  "seen_cve_ids": [],
+  "seen_ghsa_ids": [
+    "GHSA-2xv2-w8cq-5gxw",
+    "GHSA-x2rj-828p-hx9m"
+  ]
 }
