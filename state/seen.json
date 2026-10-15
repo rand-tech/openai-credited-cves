@@ -1,8 +1,11 @@
 {
-  "last_fetch_timestamp": "2026-10-15T16:55:54.931Z",
+  "last_fetch_timestamp": "2026-10-15T21:13:55.044Z",
   "last_ghsa_modified": "2026-10-12T18:31:54Z",
   "seen_cve_ids": [
-    "CVE-2026-19593"
+    "CVE-2026-109723",
+    "CVE-2026-109733",
+    "CVE-2026-19593",
+    "CVE-2026-95702"
   ],
   "seen_ghsa_ids": [
     "GHSA-2mhj-6r3c-c9xj",
