@@ -169,7 +169,8 @@ def create_update_pr(repo: str, cve_id: str, current: dict, fresh: dict,
         field_summary = ", ".join(updates.keys())
         commit_msg = f"auto: update {cve_id} ({field_summary})"
         run(["git", "commit", "-m", commit_msg])
-        run(["git", "push", "-u", "origin", branch])
+        # --force: a branch left behind by an earlier failed attempt is ours to replace.
+        run(["git", "push", "--force", "-u", "origin", branch])
 
         body = render_update_body(cve_id, current, fresh, updates)
         title = f"[update] {cve_id} — reserved → published"

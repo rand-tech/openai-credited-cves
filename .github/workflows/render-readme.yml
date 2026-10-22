@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# Fires on push and on dispatch from the scanners, often at the same time.
+concurrency:
+  group: render-readme
+  cancel-in-progress: false
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -34,6 +39,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md cves.yaml assets/
             git commit -m "docs: regenerate README + cves.yaml + severity charts from cves/ [skip ci]"
+            git pull --rebase origin main
             git push
           else
             echo "README, cves.yaml and severity chart already in sync."

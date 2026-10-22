@@ -301,7 +301,8 @@ def open_promotion_pr(repo: str, cve_id: str, issue_no: int,
         run(["git", "add", str(path)])
         run(["git", "commit", "-m",
              f"auto: promote {cve_id} from kernel-lore #{issue_no}"])
-        run(["git", "push", "-u", "origin", branch])
+        # --force: a branch left behind by an earlier failed attempt is ours to replace.
+        run(["git", "push", "--force", "-u", "origin", branch])
 
         body = render_pr_body(cve_id, issue_no, parsed, entry)
         title = f"[promote] {cve_id} — from kernel-lore #{issue_no}"
