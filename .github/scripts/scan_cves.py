@@ -91,6 +91,13 @@ def load_state() -> dict:
     return {"last_fetch_timestamp": None, "seen_cve_ids": []}
 
 
+def record_url_for(cve_id: str) -> str:
+    """Raw cvelistV5 URL for a CVE id (cves/<year>/<n // 1000>xxx/<id>.json)."""
+    _, year, num = cve_id.split("-")
+    return (f"https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/"
+            f"{year}/{int(num) // 1000}xxx/{cve_id}.json")
+
+
 def save_state(state: dict) -> None:
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
@@ -152,6 +159,16 @@ def record_matches(record: dict, keywords: list[str]) -> dict[str, list[str]]:
                 matches.setdefault("other", []).append(kw)
 
     return matches
+
+
+def is_high_confidence(matches: dict[str, list[str]]) -> bool:
+    """True when a match is specific enough to merge without review: anything in
+    a credits field, or any keyword more specific than the bare org name. A bare
+    "openai" in a description or product name is usually an app that calls the
+    OpenAI API, not an OpenAI-credited bug, so those stay open for review."""
+    if any(loc.startswith("credits") for loc in matches):
+        return True
+    return any(kw != "openai" for kws in matches.values() for kw in kws)
 
 
 # ---------- Record summary ----------
@@ -334,6 +351,18 @@ def existing_pr_for_cve(cve_id: str, repo: str) -> str | None:
     return None
 
 
+def merge_pr(pr_url: str) -> None:
+    """Merge an auto-PR right away. Best-effort: on failure the PR stays open
+    for manual review, which is still a correct outcome."""
+    result = run(["gh", "pr", "merge", pr_url, "--squash", "--delete-branch"],
+                 check=False)
+    if result.returncode != 0:
+        print(f"::warning::auto-merge failed for {pr_url}; left open for review: "
+              f"{result.stderr.strip()}", file=sys.stderr)
+    else:
+        print(f"  auto-merged {pr_url}")
+
+
 def render_pr_body(entry: dict, summary: dict, matches: dict[str, list[str]],
                    record_url: str) -> str:
     description = summary.get("description") or "_no description provided_"
@@ -421,7 +450,8 @@ def create_pr_for_entry(repo: str, entry: dict, summary: dict,
         match_summary = ", ".join(sorted(matches.keys())) or "record"
         commit_msg = f"auto: add {cve_id} (matched in {match_summary})"
         run(["git", "commit", "-m", commit_msg])
-        run(["git", "push", "-u", "origin", branch])
+        # --force: a branch left behind by an earlier failed attempt is ours to replace.
+        run(["git", "push", "--force", "-u", "origin", branch])
 
         body = render_pr_body(entry, summary, matches, record_url)
         title = f"[candidate] {cve_id} — keyword match"
@@ -438,9 +468,12 @@ def create_pr_for_entry(repo: str, entry: dict, summary: dict,
                 check=False,
             )
         if create_result.returncode != 0:
-            print(f"  pr create failed: {create_result.stderr.strip()}", file=sys.stderr)
+            print(f"::error::pr create failed: {create_result.stderr.strip()}", file=sys.stderr)
             return False
-        print(f"  opened PR for {cve_id}: {create_result.stdout.strip()}")
+        pr_url = create_result.stdout.strip()
+        print(f"  opened PR for {cve_id}: {pr_url}")
+        if is_high_confidence(matches):
+            merge_pr(pr_url)
         return True
 
     finally:
@@ -468,7 +501,11 @@ def main() -> int:
     state = load_state()
     seen: set[str] = set(state.get("seen_cve_ids", []))
     last_ts = state.get("last_fetch_timestamp")
-    print(f"  loaded state: last_fetch_timestamp={last_ts}, {len(seen)} CVEs already seen")
+    # CVEs that matched but whose fetch or PR creation failed. last_fetch_timestamp
+    # moves past them, so they are retried from here until a PR actually opens.
+    pending: set[str] = set(state.get("pending_cve_ids", []))
+    print(f"  loaded state: last_fetch_timestamp={last_ts}, {len(seen)} CVEs already seen, "
+          f"{len(pending)} pending retry")
 
     # deltaLog entries are ordered newest first. Walk them and keep only those
     # whose fetchTime is strictly greater than our last_fetch_timestamp.
@@ -486,7 +523,7 @@ def main() -> int:
         new_batches = [b for b in delta_log if (b.get("fetchTime") or "") > last_ts]
         print(f"  {len(new_batches)} batch(es) newer than last run")
 
-    if not new_batches:
+    if not new_batches and not pending:
         print("No new batches; nothing to do.")
         return 0
 
@@ -518,6 +555,10 @@ def main() -> int:
             stubs_by_cve[cve] = s
         last_fully_processed_batch_ts = batch.get("fetchTime")
 
+    for cve_id in pending:
+        stubs_by_cve.setdefault(cve_id, {"cveId": cve_id,
+                                         "githubLink": record_url_for(cve_id)})
+
     print(f"  {len(stubs_by_cve)} unique CVE(s) to consider")
 
     existing_yaml_ids = {e.get("cve") for e in load_cves_yaml()}
@@ -533,16 +574,19 @@ def main() -> int:
             continue
         if cve_id in existing_yaml_ids:
             seen.add(cve_id)
+            pending.discard(cve_id)
             continue
 
         try:
             record = http_get_json(record_url)
         except RuntimeError as e:
-            print(f"  skip {cve_id}: {e}", file=sys.stderr)
+            print(f"  skip {cve_id} (will retry): {e}", file=sys.stderr)
+            pending.add(cve_id)
             continue
 
         matches = record_matches(record, keywords)
         if not matches:
+            pending.discard(cve_id)
             time.sleep(FETCH_SLEEP_SECONDS)
             continue
 
@@ -557,6 +601,7 @@ def main() -> int:
         if existing_pr:
             print(f"    PR already open: {existing_pr}")
             seen.add(cve_id)
+            pending.discard(cve_id)
             time.sleep(FETCH_SLEEP_SECONDS)
             continue
 
@@ -569,7 +614,10 @@ def main() -> int:
         ok = create_pr_for_entry(repo, entry, summary, matches, record_url)
         if ok:
             prs_opened += 1
-        seen.add(cve_id)
+            seen.add(cve_id)
+            pending.discard(cve_id)
+        else:
+            pending.add(cve_id)
         time.sleep(FETCH_SLEEP_SECONDS)
 
     # Advance last_fetch_timestamp only to the boundary of fully-processed batches.
@@ -581,9 +629,11 @@ def main() -> int:
 
     state["last_fetch_timestamp"] = new_last_ts
     state["seen_cve_ids"] = sorted(seen)
+    state["pending_cve_ids"] = sorted(pending)
     save_state(state)
 
-    print(f"Done. {matches_found} matches, {prs_opened} PR(s) opened, {len(seen)} CVEs tracked total.")
+    print(f"Done. {matches_found} matches, {prs_opened} PR(s) opened, {len(seen)} CVEs tracked total, "
+          f"{len(pending)} pending retry.")
     print(f"  advanced last_fetch_timestamp to: {new_last_ts}{' (capped)' if capped else ''}")
     return 0
 

@@ -12,7 +12,8 @@ concurrency:
 
 permissions:
   contents: write       # commit state, push branches
-  pull-requests: write  # open PRs
+  pull-requests: write  # open and auto-merge PRs
+  actions: write        # dispatch render-readme.yml
 
 jobs:
   scan:
@@ -48,6 +49,7 @@ jobs:
           if [[ -n "$(git status --porcelain state/)" ]]; then
             git add state/
             git commit -m "chore(state): update seen.json [skip ci]"
+            git pull --rebase origin main
             git push
           else
             echo "No state changes to commit."
@@ -72,6 +74,7 @@ jobs:
           if [[ -n "$(git status --porcelain state/)" ]]; then
             git add state/
             git commit -m "chore(state): update GHSA scan state [skip ci]"
+            git pull --rebase origin main
             git push
           else
             echo "No GHSA state changes to commit."
@@ -93,6 +96,7 @@ jobs:
           if [[ -n "$(git status --porcelain cves/)" ]]; then
             git add cves/
             git commit -m "chore: sync VulnCheck KEV markers"
+            git pull --rebase origin main
             git push
           else
             echo "No KEV marker changes."
@@ -108,7 +112,15 @@ jobs:
           if [[ -n "$(git status --porcelain cves/)" ]]; then
             git add cves/
             git commit -m "chore: backfill CVSS scores from NVD"
+            git pull --rebase origin main
             git push
           else
             echo "No CVSS backfill needed."
           fi
+
+      - name: Re-render README
+        # Auto-merges and pushes made with GITHUB_TOKEN don't fire push-triggered
+        # workflows, so dispatch the renderer explicitly. It no-ops when in sync.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run render-readme.yml --ref main

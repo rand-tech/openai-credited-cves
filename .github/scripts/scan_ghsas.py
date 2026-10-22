@@ -44,7 +44,9 @@ from scan_cves import (  # noqa: E402
     USER_AGENT,
     cve_file_path,
     entry_ident,
+    is_high_confidence,
     load_cves_yaml,
+    merge_pr,
     run,
     save_cves_yaml,
     write_cve_entry,
@@ -278,9 +280,11 @@ def existing_pr_with_id(cve_or_ghsa: str, repo: str) -> str | None:
     return None
 
 
-def open_pr(branch: str, title: str, body: str, repo: str) -> bool:
+def open_pr(branch: str, title: str, body: str, repo: str,
+            auto_merge: bool = False) -> bool:
     base_branch = run(["git", "rev-parse", "--abbrev-ref", "HEAD"]).stdout.strip()
-    run(["git", "push", "-u", "origin", branch])
+    # --force: a branch left behind by an earlier failed attempt is ours to replace.
+    run(["git", "push", "--force", "-u", "origin", branch])
     create_result = run(
         ["gh", "pr", "create", "--repo", repo, "--base", base_branch,
          "--head", branch, "--title", title, "--body", body,
@@ -294,9 +298,12 @@ def open_pr(branch: str, title: str, body: str, repo: str) -> bool:
             check=False,
         )
     if create_result.returncode != 0:
-        print(f"  pr create failed: {create_result.stderr.strip()}", file=sys.stderr)
+        print(f"::error::pr create failed: {create_result.stderr.strip()}", file=sys.stderr)
         return False
-    print(f"  opened PR: {create_result.stdout.strip()}")
+    pr_url = create_result.stdout.strip()
+    print(f"  opened PR: {pr_url}")
+    if auto_merge:
+        merge_pr(pr_url)
     return True
 
 
@@ -400,7 +407,8 @@ def create_candidate_pr(repo: str, entry: dict, advisory: dict,
         title = (f"[candidate] {cve_id} (via {ghsa_id})" if cve_id
                  else f"[candidate] {ghsa_id} - no CVE yet")
         body = render_candidate_body(entry, advisory, matches)
-        return open_pr(branch, title, body, repo)
+        return open_pr(branch, title, body, repo,
+                       auto_merge=is_high_confidence(matches))
     finally:
         reset_to_base(run(["git", "rev-parse", "--abbrev-ref", "main"],
                           check=False).stdout.strip() or "main")
@@ -500,7 +508,8 @@ def create_enrichment_pr(repo: str, cve_id: str, ghsa_id: str,
         title = f"[update] {cve_id} - GHSA enrichment ({ghsa_id})"
         body = render_enrichment_body(cve_id, ghsa_id, current, updates,
                                       advisory, matches)
-        return open_pr(branch, title, body, repo)
+        # Only fills blank fields on an already-accepted entry.
+        return open_pr(branch, title, body, repo, auto_merge=True)
     finally:
         reset_to_base(base_branch)
 
@@ -553,7 +562,8 @@ def create_assignment_pr(repo: str, ghsa_id: str, cve_id: str,
 
         title = f"[update] {ghsa_id} -> {cve_id} (CVE assigned)"
         body = render_assignment_body(ghsa_id, cve_id, current, advisory)
-        return open_pr(branch, title, body, repo)
+        # Only renames an already-accepted entry to its new CVE id.
+        return open_pr(branch, title, body, repo, auto_merge=True)
     finally:
         reset_to_base(base_branch)
 
@@ -572,6 +582,9 @@ def forward_scan(repo: str, keywords: list[str], usernames: list[str],
 
     last_ghsa_modified = state.get("last_ghsa_modified")
     seen_ghsa_ids: set[str] = set(state.get("seen_ghsa_ids") or [])
+    # Matched advisories whose PR creation failed. The modified-time cursor moves
+    # past them, so they are re-fetched by id until a PR actually opens.
+    pending_ghsa_ids: set[str] = set(state.get("pending_ghsa_ids") or [])
 
     if not last_ghsa_modified:
         days = int(os.environ.get("FIRST_RUN_GHSA_DAYS",
@@ -607,6 +620,21 @@ def forward_scan(repo: str, keywords: list[str], usernames: list[str],
 
     print(f"  fetched {len(advisories)} advisory record(s) across {pages} page(s)")
 
+    fetched_ids = {a.get("ghsa_id") for a in advisories}
+    for ghsa_id in sorted(pending_ghsa_ids - fetched_ids):
+        try:
+            body, _ = http_get(ADVISORY_URL.format(ghsa_id=ghsa_id))
+        except RuntimeError as e:
+            print(f"  pending {ghsa_id}: fetch failed (will retry): {e}", file=sys.stderr)
+            continue
+        if body is None:
+            print(f"  pending {ghsa_id}: 404; dropping")
+            pending_ghsa_ids.discard(ghsa_id)
+            continue
+        advisories.append(body)
+    if pending_ghsa_ids:
+        print(f"  retrying {len(pending_ghsa_ids)} pending advisory/advisories")
+
     prs_opened = 0
     max_modified_seen = cutoff
 
@@ -615,16 +643,21 @@ def forward_scan(repo: str, keywords: list[str], usernames: list[str],
         if not ghsa_id:
             continue
         updated_at = advisory.get("updated_at") or ""
-        if updated_at > max_modified_seen:
+        # Re-fetched pending advisories sit outside the paged window; they must
+        # not advance the cursor past pages that were never fetched.
+        if ghsa_id not in pending_ghsa_ids and updated_at > max_modified_seen:
             max_modified_seen = updated_at
 
         if ghsa_id in seen_ghsa_ids:
+            pending_ghsa_ids.discard(ghsa_id)
             continue
         if advisory.get("withdrawn_at"):
+            pending_ghsa_ids.discard(ghsa_id)
             continue
 
         matches = advisory_matches(advisory, keywords, usernames)
         if not matches:
+            pending_ghsa_ids.discard(ghsa_id)
             continue
 
         cve_id = advisory.get("cve_id")
@@ -648,7 +681,9 @@ def forward_scan(repo: str, keywords: list[str], usernames: list[str],
             if create_enrichment_pr(repo, cve_id, ghsa_id, current,
                                     updates, advisory, matches):
                 prs_opened += 1
-            seen_ghsa_ids.add(ghsa_id)
+                seen_ghsa_ids.add(ghsa_id)
+            else:
+                pending_ghsa_ids.add(ghsa_id)
             continue
 
         # Case 1b: GHSA already tracked but referenced by ghsa not cve -> skip
@@ -666,10 +701,14 @@ def forward_scan(repo: str, keywords: list[str], usernames: list[str],
         entry = extract_ghsa_summary(advisory)
         if create_candidate_pr(repo, entry, advisory, matches):
             prs_opened += 1
-        seen_ghsa_ids.add(ghsa_id)
+            seen_ghsa_ids.add(ghsa_id)
+        else:
+            pending_ghsa_ids.add(ghsa_id)
 
+    pending_ghsa_ids -= seen_ghsa_ids
     state["last_ghsa_modified"] = max_modified_seen
     state["seen_ghsa_ids"] = sorted(seen_ghsa_ids)
+    state["pending_ghsa_ids"] = sorted(pending_ghsa_ids)
     return prs_opened
 
 
