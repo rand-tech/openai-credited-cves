@@ -280,9 +280,8 @@ def existing_pr_with_id(cve_or_ghsa: str, repo: str) -> str | None:
     return None
 
 
-def open_pr(branch: str, title: str, body: str, repo: str,
+def open_pr(branch: str, base_branch: str, title: str, body: str, repo: str,
             auto_merge: bool = False) -> bool:
-    base_branch = run(["git", "rev-parse", "--abbrev-ref", "HEAD"]).stdout.strip()
     # --force: a branch left behind by an earlier failed attempt is ours to replace.
     run(["git", "push", "--force", "-u", "origin", branch])
     create_result = run(
@@ -383,10 +382,9 @@ def create_candidate_pr(repo: str, entry: dict, advisory: dict,
     ghsa_id = entry.get("ghsa") or "UNKNOWN"
     cve_id = entry.get("cve")
     branch = f"auto-ghsa/{ghsa_id.lower()}"
+    base_branch = run(["git", "rev-parse", "--abbrev-ref", "HEAD"]).stdout.strip()
     try:
-        run(["git", "fetch", "origin",
-             run(["git", "rev-parse", "--abbrev-ref", "HEAD"]).stdout.strip()],
-            check=False)
+        run(["git", "fetch", "origin", base_branch], check=False)
         run(["git", "branch", "-D", branch], check=False)
         run(["git", "checkout", "-b", branch])
 
@@ -407,11 +405,10 @@ def create_candidate_pr(repo: str, entry: dict, advisory: dict,
         title = (f"[candidate] {cve_id} (via {ghsa_id})" if cve_id
                  else f"[candidate] {ghsa_id} - no CVE yet")
         body = render_candidate_body(entry, advisory, matches)
-        return open_pr(branch, title, body, repo,
+        return open_pr(branch, base_branch, title, body, repo,
                        auto_merge=is_high_confidence(matches))
     finally:
-        reset_to_base(run(["git", "rev-parse", "--abbrev-ref", "main"],
-                          check=False).stdout.strip() or "main")
+        reset_to_base(base_branch)
 
 
 # ---------- Enrichment PR (GHSA found for existing CVE entry) ----------
@@ -509,7 +506,7 @@ def create_enrichment_pr(repo: str, cve_id: str, ghsa_id: str,
         body = render_enrichment_body(cve_id, ghsa_id, current, updates,
                                       advisory, matches)
         # Only fills blank fields on an already-accepted entry.
-        return open_pr(branch, title, body, repo, auto_merge=True)
+        return open_pr(branch, base_branch, title, body, repo, auto_merge=True)
     finally:
         reset_to_base(base_branch)
 
@@ -563,7 +560,7 @@ def create_assignment_pr(repo: str, ghsa_id: str, cve_id: str,
         title = f"[update] {ghsa_id} -> {cve_id} (CVE assigned)"
         body = render_assignment_body(ghsa_id, cve_id, current, advisory)
         # Only renames an already-accepted entry to its new CVE id.
-        return open_pr(branch, title, body, repo, auto_merge=True)
+        return open_pr(branch, base_branch, title, body, repo, auto_merge=True)
     finally:
         reset_to_base(base_branch)
 
