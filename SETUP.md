@@ -136,6 +136,9 @@ The current list includes OpenAI, four credit phrases ("OpenAI Security Research
 
 Do not add the `openai.com` email domain: `scan_lore.py` treats it as a domain and would open an issue for every ordinary kernel/git patch signed off by an OpenAI engineer. Add the researcher's name instead.
 
+### Monthly snapshot audit
+`.github/workflows/audit-snapshot.yml` runs on the 1st of each month (or via **Run workflow**). It downloads the full cvelistV5 snapshot, searches every record for the keywords, and queues any match that isn't in `cves/`, `seen_cve_ids`, `pending_cve_ids` or `state/audit_baseline.json` into `pending_cve_ids`, then starts the scanner. Missed CVEs then get auto-merged or a review PR like any other hit. The baseline lists historical matches that were excluded when `cves/` was seeded; regenerate it with `AUDIT_WRITE_BASELINE=1 python .github/scripts/audit_snapshot.py <cves.zip>`.
+
 ### Changing the schedule
 Edit `.github/workflows/scan-cves.yml`. The cron line is:
 
