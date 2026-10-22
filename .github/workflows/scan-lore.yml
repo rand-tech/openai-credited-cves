@@ -53,6 +53,7 @@ jobs:
           if [[ -n "$(git status --porcelain state/)" ]]; then
             git add state/
             git commit -m "chore(state): update lore_seen.json [skip ci]"
+            git pull --rebase origin main
             git push
           else
             echo "No state changes to commit."

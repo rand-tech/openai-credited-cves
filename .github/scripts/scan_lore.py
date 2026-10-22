@@ -347,6 +347,7 @@ def main() -> int:
     # 2. Fetch + trailer-filter the ones we haven't processed.
     findings: dict[str, dict] = {}  # finding_key -> {finding, link, terms_hit}
     new_seen: list[str] = []
+    link_key: dict[str, str] = {}  # link -> finding key, for links that produced one
     for link, surfaced_terms in candidates.items():
         if link in seen:
             continue
@@ -362,6 +363,7 @@ def main() -> int:
         joined = " ".join(f["trailers"]).lower()
         terms_hit = {t for t in terms if t in joined} or surfaced_terms
         key = canonical_key(f["subject"])
+        link_key[link] = key
         # Keep the representative with the cleanest subject (no version numbers / FAILED).
         if key not in findings or not re.search(r"(?i)failed|\d+/\d+|has been added", f["subject"]):
             findings[key] = {"finding": f, "link": link, "terms_hit": terms_hit}
@@ -395,6 +397,9 @@ def main() -> int:
             opened_keys.add(key)
 
     # 4. Persist state.
+    # A message that produced a finding only counts as seen once its issue is
+    # filed; failed or deferred ones are re-fetched next run.
+    new_seen = [l for l in new_seen if link_key.get(l, None) in (None, *opened_keys)]
     state["seen_message_ids"] = sorted(seen | set(new_seen))
     state["opened_finding_keys"] = sorted(opened_keys)
     state["last_run_date"] = now.strftime("%Y%m%d")
