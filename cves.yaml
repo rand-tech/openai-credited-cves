@@ -75,6 +75,18 @@
   ghsa_link: null
   notes: null
   auto_discovered: true
+- cve: CVE-2026-109728
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 5.4
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109728
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-109723
   ghsa: null
   date: '2026-10-13'
@@ -156,6 +168,56 @@
   credit: Mikhail Sosonkin from OpenAI
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-95702
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-107121
+  ghsa: null
+  date: '2026-10-07'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 6.5
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-107121
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-77185
+  ghsa: null
+  date: '2026-09-30'
+  vendor: Apache Software Foundation
+  product: Apache MINA SSHD
+  cvss: 9.1
+  credit: Chris Jarret-Davies, OpenAI Security Research Team
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-77185
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-100793
+  ghsa: null
+  date: '2026-09-29'
+  vendor: Mozilla
+  product: Thunderbird
+  cvss: 6.5
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-100793
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-100792
+  ghsa: null
+  date: '2026-09-29'
+  vendor: Mozilla
+  product: Thunderbird
+  cvss: 7.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-100792
   ghsa_link: null
   notes: null
   auto_discovered: true

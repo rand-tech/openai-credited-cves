@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 112**
+**CURRENT CVE COUNT: 117**
 
 ## Distributions
 
@@ -42,6 +42,7 @@ This project is maintained on a best effort basis.
 | [CVE-2026-107350](https://www.cve.org/CVERecord?id=CVE-2026-107350) | 2026-10-14 | n/a | PgBouncer | 8.8 |  | Thanks to Dave Aitel (@daveaitel-openai, OpenAI) for finding and reporting this issue. |
 | [CVE-2026-109733](https://www.cve.org/CVERecord?id=CVE-2026-109733) | 2026-10-13 | Mozilla | Firefox | 8.1 |  | Amy Burnett of OpenAI |
 | [CVE-2026-109731](https://www.cve.org/CVERecord?id=CVE-2026-109731) | 2026-10-13 | Mozilla | Firefox | 5.4 |  | Amy Burnett of OpenAI |
+| [CVE-2026-109728](https://www.cve.org/CVERecord?id=CVE-2026-109728) | 2026-10-13 | Mozilla | Firefox | 5.4 |  | Amy Burnett of OpenAI |
 | [CVE-2026-109723](https://www.cve.org/CVERecord?id=CVE-2026-109723) | 2026-10-13 | Mozilla | Firefox | 5.4 |  | Amy Burnett of OpenAI |
 | [CVE-2026-109722](https://www.cve.org/CVERecord?id=CVE-2026-109722) | 2026-10-13 | Mozilla | Firefox | 8.1 |  | Amy Burnett of OpenAI |
 | [CVE-2026-109721](https://www.cve.org/CVERecord?id=CVE-2026-109721) | 2026-10-13 | Mozilla | Firefox | 5.4 |  | Amy Burnett of OpenAI |
@@ -49,6 +50,10 @@ This project is maintained on a best effort basis.
 | [CVE-2026-109716](https://www.cve.org/CVERecord?id=CVE-2026-109716) | 2026-10-13 | Mozilla | Firefox | 8.1 |  | Amy Burnett of OpenAI |
 | [CVE-2026-109715](https://www.cve.org/CVERecord?id=CVE-2026-109715) | 2026-10-13 | Mozilla | Firefox | 8.1 |  | Amy Burnett of OpenAI |
 | [CVE-2026-95702](https://www.cve.org/CVERecord?id=CVE-2026-95702) | 2026-10-09 | Google | gVisor | 8.5 |  | Mikhail Sosonkin from OpenAI |
+| [CVE-2026-107121](https://www.cve.org/CVERecord?id=CVE-2026-107121) | 2026-10-07 | Red Hat | Red Hat Build of Keycloak | 6.5 |  | Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting this issue. |
+| [CVE-2026-77185](https://www.cve.org/CVERecord?id=CVE-2026-77185) | 2026-09-30 | Apache Software Foundation | Apache MINA SSHD | 9.1 |  | Chris Jarret-Davies, OpenAI Security Research Team |
+| [CVE-2026-100793](https://www.cve.org/CVERecord?id=CVE-2026-100793) | 2026-09-29 | Mozilla | Thunderbird | 6.5 |  | Amy Burnett of OpenAI |
+| [CVE-2026-100792](https://www.cve.org/CVERecord?id=CVE-2026-100792) | 2026-09-29 | Mozilla | Thunderbird | 7.1 |  | Amy Burnett of OpenAI |
 | [CVE-2026-97177](https://www.cve.org/CVERecord?id=CVE-2026-97177) | 2026-09-24 | Red Hat | Red Hat Build of Keycloak | 6.6 |  | Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting this issue. |
 | [CVE-2026-96445](https://www.cve.org/CVERecord?id=CVE-2026-96445) | 2026-09-23 | Red Hat | Red Hat Build of Keycloak | 6.8 |  | Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-94001](https://www.cve.org/CVERecord?id=CVE-2026-94001) | 2026-09-19 | Red Hat | Red Hat Build of Keycloak | 6.5 |  | Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting this issue. |
