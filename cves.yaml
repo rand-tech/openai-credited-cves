@@ -677,6 +677,8 @@
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-66384
   ghsa_link: null
+  cisa_kev: true
+  kev_date_added: '2026-08-27'
   notes: null
   auto_discovered: true
 - cve: CVE-2026-66382
@@ -1196,6 +1198,8 @@
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-42016
   ghsa_link: null
+  cisa_kev: true
+  kev_date_added: '2026-09-11'
   notes: null
   auto_discovered: true
 - cve: CVE-2026-16410

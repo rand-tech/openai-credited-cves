@@ -6,7 +6,7 @@ Keeps auto-created and patched files consistent with the rest of cves/.
 FIELD_ORDER = (
     "cve", "ghsa", "date", "vendor", "product", "cvss", "credit",
     "status", "cve_link", "ghsa_link",
-    "vulncheck_kev", "kev_date_added", "notes",
+    "cisa_kev", "kev_date_added", "notes",
     "auto_discovered",
 )
 

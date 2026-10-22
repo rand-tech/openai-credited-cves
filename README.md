@@ -18,7 +18,7 @@ Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Securi
     <td>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="assets/kev-exploited-dark.svg">
-        <img alt="Exploited in the wild (VulnCheck KEV)" src="assets/kev-exploited.svg" width="440">
+        <img alt="Exploited in the wild (CISA KEV)" src="assets/kev-exploited.svg" width="440">
       </picture>
     </td>
   </tr>
@@ -34,7 +34,7 @@ This project is maintained on a best effort basis.
 ## The List
 
 <!-- BEGIN_CVE_TABLE -->
-| CVE | Date | Vendor | Product | CVSS | vcKEV | Credit |
+| CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Wiz \| Ryan at Calif.io \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
 | [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Ryan at Calif.io \| Wiz \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
@@ -89,7 +89,7 @@ This project is maintained on a best effort basis.
 | [CVE-2026-68754](https://www.cve.org/CVERecord?id=CVE-2026-68754) | 2026-08-12 | jfrog | artifactory | 6.5 |  | Khai Tran \| OpenAI |
 | [CVE-2026-68753](https://www.cve.org/CVERecord?id=CVE-2026-68753) | 2026-08-12 | jfrog | artifactory | 5.3 |  | Khai Tran \| OpenAI |
 | [CVE-2026-68752](https://www.cve.org/CVERecord?id=CVE-2026-68752) | 2026-08-12 | jfrog | artifactory | 7.2 |  | OpenAI |
-| [CVE-2026-66384](https://www.cve.org/CVERecord?id=CVE-2026-66384) | 2026-08-12 | jfrog | artifactory | 5.3 |  | Kostya Kortchinsky \| OpenAI |
+| [CVE-2026-66384](https://www.cve.org/CVERecord?id=CVE-2026-66384) | 2026-08-12 | jfrog | artifactory | 5.3 | ✅ | Kostya Kortchinsky \| OpenAI |
 | [CVE-2026-66382](https://www.cve.org/CVERecord?id=CVE-2026-66382) | 2026-08-12 | jfrog | artifactory | 4.3 |  | Khai Tran \| OpenAI |
 | [CVE-2026-66381](https://www.cve.org/CVERecord?id=CVE-2026-66381) | 2026-08-12 | jfrog | artifactory | 5.3 |  | Khai Tran \| OpenAI |
 | [CVE-2026-66380](https://www.cve.org/CVERecord?id=CVE-2026-66380) | 2026-08-12 | jfrog | artifactory | 4.3 |  | Khai Tran \| OpenAI |
@@ -129,7 +129,7 @@ This project is maintained on a best effort basis.
 | [CVE-2026-65617](https://www.cve.org/CVERecord?id=CVE-2026-65617) | 2026-07-27 | jfrog | artifactory | 8.8 |  | Kostya Kortchinsky \| OpenAI |
 | [CVE-2026-65616](https://www.cve.org/CVERecord?id=CVE-2026-65616) | 2026-07-27 | jfrog | artifactory | 8.8 |  | Kostya Kortchinsky \| OpenAI |
 | [CVE-2026-42017](https://www.cve.org/CVERecord?id=CVE-2026-42017) | 2026-07-27 | jfrog | artifactory | 8.8 |  | Kostya Kortchinsky \| OpenAI |
-| [CVE-2026-42016](https://www.cve.org/CVERecord?id=CVE-2026-42016) | 2026-07-27 | jfrog | artifactory | 8.1 |  | Kostya Kortchinsky \| OpenAI |
+| [CVE-2026-42016](https://www.cve.org/CVERecord?id=CVE-2026-42016) | 2026-07-27 | jfrog | artifactory | 8.1 | ✅ | Kostya Kortchinsky \| OpenAI |
 | [CVE-2026-16410](https://www.cve.org/CVERecord?id=CVE-2026-16410) | 2026-07-21 | Mozilla | Firefox | 9.8 |  | Amy Burnett of OpenAI |
 | [CVE-2026-16409](https://www.cve.org/CVERecord?id=CVE-2026-16409) | 2026-07-21 | Mozilla | Firefox | 7.5 |  | Artur Cygan of Trail of Bits in partnership with OpenAI |
 | [CVE-2026-16369](https://www.cve.org/CVERecord?id=CVE-2026-16369) | 2026-07-21 | Mozilla | Firefox | 9.8 |  | Amy Burnett of OpenAI |

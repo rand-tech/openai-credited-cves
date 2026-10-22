@@ -53,7 +53,7 @@ Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Securi
     <td>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="assets/kev-exploited-dark.svg">
-        <img alt="Exploited in the wild (VulnCheck KEV)" src="assets/kev-exploited.svg" width="440">
+        <img alt="Exploited in the wild (CISA KEV)" src="assets/kev-exploited.svg" width="440">
       </picture>
     </td>
   </tr>
@@ -124,8 +124,8 @@ CHART_THEMES = {
 }
 
 
-# Exploited-in-the-wild (VulnCheck KEV) pie colors.
-KEV_EXPLOITED_COLOR = "#d32f2f"  # red — known exploited (in vcKEV)
+# Exploited-in-the-wild (CISA KEV) pie colors.
+KEV_EXPLOITED_COLOR = "#d32f2f"  # red — known exploited (in CISA KEV)
 KEV_NOT_COLOR = "#9e9e9e"        # gray — not known to be exploited
 
 
@@ -204,15 +204,15 @@ def render_severity_svg(entries: list[dict], theme: str = "light") -> str:
 
 
 def render_kev_svg(entries: list[dict], theme: str = "light") -> str:
-    """SVG pie of exploited-in-the-wild status: red for CVEs in VulnCheck KEV,
+    """SVG pie of exploited-in-the-wild status: red for CVEs in CISA KEV,
     gray for the rest."""
-    exploited = sum(1 for e in entries if e.get("vulncheck_kev"))
+    exploited = sum(1 for e in entries if e.get("cisa_kev"))
     segments = [
         ("Exploited", exploited, KEV_EXPLOITED_COLOR),
         ("Not exploited", len(entries) - exploited, KEV_NOT_COLOR),
     ]
     return _pie_svg("Exploited in the Wild", segments, theme,
-                    subtitle="Source: VulnCheck KEV")
+                    subtitle="Source: CISA KEV")
 
 
 def render_cve_cell(entry: dict) -> str:
@@ -247,9 +247,9 @@ def render_cvss_cell(entry: dict) -> str:
 
 
 def render_kev_cell(entry: dict) -> str:
-    """Mark CVEs known to be exploited (present in VulnCheck KEV). Compact icon
+    """Mark CVEs known to be exploited (present in CISA KEV). Compact icon
     to keep the column narrow; empty when the CVE isn't in KEV."""
-    return "✅" if entry.get("vulncheck_kev") else ""
+    return "✅" if entry.get("cisa_kev") else ""
 
 
 def render_credit_cell(entry: dict) -> str:
@@ -305,7 +305,7 @@ def _cell(value: str) -> str:
 
 
 def render_table(entries: list[dict]) -> str:
-    header = "| CVE | Date | Vendor | Product | CVSS | vcKEV | Credit |\n"
+    header = "| CVE | Date | Vendor | Product | CVSS | KEV | Credit |\n"
     header += "| --- | --- | --- | --- | --- | --- | --- |\n"
     rows = []
     for e in sorted(entries, key=sort_key, reverse=True):
@@ -409,7 +409,7 @@ def main() -> int:
         render_severity_svg(entries, "light"), encoding="utf-8")
     (assets_dir / "cvss-severity-dark.svg").write_text(
         render_severity_svg(entries, "dark"), encoding="utf-8")
-    # Exploited-in-the-wild (VulnCheck KEV) pie, light + dark.
+    # Exploited-in-the-wild (CISA KEV) pie, light + dark.
     (assets_dir / "kev-exploited.svg").write_text(
         render_kev_svg(entries, "light"), encoding="utf-8")
     (assets_dir / "kev-exploited-dark.svg").write_text(
