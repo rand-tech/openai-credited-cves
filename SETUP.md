@@ -83,7 +83,7 @@ After that, it runs automatically every 2 hours.
 ## Daily operation
 
 ### When the scanner finds a match
-High-confidence matches are **merged automatically**: the keyword was found in the record's credits, or the match is a researcher name or credit phrase rather than the bare word "OpenAI". Everything else (typically "OpenAI" in a description or product name, i.e. an app that calls the OpenAI API) stays open for review. GHSA enrichment and CVE-assignment PRs only touch already-accepted entries and are always merged. If a PR can't be created, the CVE/GHSA is kept in `pending_cve_ids` / `pending_ghsa_ids` in `state/seen.json` and retried every run.
+High-confidence matches are **merged automatically**: "OpenAI" / "Codex Security" in the record's credits, or an org-specific credit phrase such as "in collaboration with OpenAI" anywhere. Everything else stays open for review: a bare "OpenAI" in a description or product name is usually an app that calls the OpenAI API, and a researcher name alone may predate their time at OpenAI or merely mention them. GHSA enrichment and CVE-assignment PRs only touch already-accepted entries and are always merged. If a PR can't be created, the CVE/GHSA is kept in `pending_cve_ids` / `pending_ghsa_ids` in `state/seen.json` and retried every run.
 
 A PR titled `[candidate] CVE-XXXX-XXXX — keyword match` appears in your repo. The PR body shows:
 - Which keywords matched in which fields (e.g. "credits: openai, kyle zeng")
