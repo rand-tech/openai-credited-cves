@@ -1,3 +1,164 @@
+- cve: CVE-2026-109619
+  ghsa: null
+  date: '2026-10-21'
+  vendor: PHP Group
+  product: PHP
+  cvss: 9.2
+  credit: >-
+    Wiz | Ryan at Calif.io | OpenAI | Arnaud Le Blanc | Ilija Tovilo | Jakub Zelenka | Nora Dossche
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109619
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109618
+  ghsa: null
+  date: '2026-10-21'
+  vendor: PHP Group
+  product: PHP
+  cvss: 9.2
+  credit: >-
+    Ryan at Calif.io | Wiz | OpenAI | Arnaud Le Blanc | Ilija Tovilo | Jakub Zelenka | Nora Dossche
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109618
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-94300
+  ghsa: null
+  date: '2026-10-21'
+  vendor: ISC
+  product: BIND 9
+  cvss: 8.1
+  credit: >-
+    While this flaw was discovered in internal testing, ISC would like to thank Dave Aitel from OpenAI
+    who independently discovered and responsibly reported the issue to ISC.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-94300
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-107350
+  ghsa: null
+  date: '2026-10-14'
+  vendor: n/a
+  product: PgBouncer
+  cvss: 8.8
+  credit: >-
+    Thanks to Dave Aitel (@daveaitel-openai, OpenAI) for finding and reporting this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-107350
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109733
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109733
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109731
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 5.4
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109731
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109723
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 5.4
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109723
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109722
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109722
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109721
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 5.4
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109721
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109720
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 7.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109720
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109716
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109716
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-109715
+  ghsa: null
+  date: '2026-10-13'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.1
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-109715
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-95702
+  ghsa: null
+  date: '2026-10-09'
+  vendor: Google
+  product: gVisor
+  cvss: 8.5
+  credit: Mikhail Sosonkin from OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-95702
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-97177
   ghsa: null
   date: '2026-09-24'
@@ -51,6 +212,18 @@
     issue.
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-90997
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-89791
+  ghsa: null
+  date: '2026-09-16'
+  vendor: Linux
+  product: Linux
+  cvss: 7.8
+  credit: ''
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-89791
   ghsa_link: null
   notes: null
   auto_discovered: true
