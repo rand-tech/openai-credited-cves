@@ -161,14 +161,24 @@ def record_matches(record: dict, keywords: list[str]) -> dict[str, list[str]]:
     return matches
 
 
+ORG_TERMS = ("openai", "codex security")
+
+
 def is_high_confidence(matches: dict[str, list[str]]) -> bool:
-    """True when a match is specific enough to merge without review: anything in
-    a credits field, or any keyword more specific than the bare org name. A bare
-    "openai" in a description or product name is usually an app that calls the
-    OpenAI API, not an OpenAI-credited bug, so those stay open for review."""
-    if any(loc.startswith("credits") for loc in matches):
-        return True
-    return any(kw != "openai" for kws in matches.values() for kw in kws)
+    """True when a match is specific enough to merge without review: the org
+    (OpenAI / Codex Security) named in a credits field, or an org-specific
+    credit phrase ("in collaboration with OpenAI") anywhere. A bare "openai" in
+    a description or product name is usually an app calling the OpenAI API, and
+    a researcher name alone may predate their time at OpenAI (or merely mention
+    them), so those stay open for review."""
+    for loc, kws in matches.items():
+        for kw in kws:
+            org = any(t in kw for t in ORG_TERMS)
+            if loc.startswith("credits") and (org or loc == "credits.user.login"):
+                return True
+            if org and kw != "openai":
+                return True
+    return False
 
 
 # ---------- Record summary ----------
