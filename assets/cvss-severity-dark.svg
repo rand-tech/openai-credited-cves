@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   <text x="140.0" y="34" font-size="17" font-weight="600" text-anchor="middle" fill="#e6edf3">CVSS Severity</text>
-  <path d="M140.00,170.00 L140.00,65.00 A105.0,105.0 0 0 1 195.42,80.82 Z" fill="#d32f2f" stroke="#0d1117" stroke-width="2"/>
-  <path d="M140.00,170.00 L195.42,80.82 A105.0,105.0 0 0 1 177.13,268.22 Z" fill="#f57c00" stroke="#0d1117" stroke-width="2"/>
-  <path d="M140.00,170.00 L177.13,268.22 A105.0,105.0 0 1 1 116.84,67.59 Z" fill="#f9c80e" stroke="#0d1117" stroke-width="2"/>
-  <path d="M140.00,170.00 L116.84,67.59 A105.0,105.0 0 0 1 140.00,65.00 Z" fill="#2e7d32" stroke="#0d1117" stroke-width="2"/>
-  <text x="140.0" y="305" font-size="12" text-anchor="middle" fill="#8b949e">113 CVEs</text>
-  <rect x="300.0" y="118.0" width="16" height="16" rx="3" fill="#d32f2f"/><text x="324.0" y="131.0" font-size="14" fill="#e6edf3">Critical: 10 (8.85%)</text>
-  <rect x="300.0" y="148.0" width="16" height="16" rx="3" fill="#f57c00"/><text x="324.0" y="161.0" font-size="14" fill="#e6edf3">High: 40 (35.40%)</text>
-  <rect x="300.0" y="178.0" width="16" height="16" rx="3" fill="#f9c80e"/><text x="324.0" y="191.0" font-size="14" fill="#e6edf3">Medium: 59 (52.21%)</text>
-  <rect x="300.0" y="208.0" width="16" height="16" rx="3" fill="#2e7d32"/><text x="324.0" y="221.0" font-size="14" fill="#e6edf3">Low: 4 (3.54%)</text>
+  <path d="M140.00,170.00 L140.00,65.00 A105.0,105.0 0 0 1 195.86,81.09 Z" fill="#d32f2f" stroke="#0d1117" stroke-width="2"/>
+  <path d="M140.00,170.00 L195.86,81.09 A105.0,105.0 0 0 1 180.18,267.01 Z" fill="#f57c00" stroke="#0d1117" stroke-width="2"/>
+  <path d="M140.00,170.00 L180.18,267.01 A105.0,105.0 0 1 1 116.64,67.63 Z" fill="#f9c80e" stroke="#0d1117" stroke-width="2"/>
+  <path d="M140.00,170.00 L116.64,67.63 A105.0,105.0 0 0 1 140.00,65.00 Z" fill="#2e7d32" stroke="#0d1117" stroke-width="2"/>
+  <text x="140.0" y="305" font-size="12" text-anchor="middle" fill="#8b949e">112 CVEs</text>
+  <rect x="300.0" y="118.0" width="16" height="16" rx="3" fill="#d32f2f"/><text x="324.0" y="131.0" font-size="14" fill="#e6edf3">Critical: 10 (8.93%)</text>
+  <rect x="300.0" y="148.0" width="16" height="16" rx="3" fill="#f57c00"/><text x="324.0" y="161.0" font-size="14" fill="#e6edf3">High: 39 (34.82%)</text>
+  <rect x="300.0" y="178.0" width="16" height="16" rx="3" fill="#f9c80e"/><text x="324.0" y="191.0" font-size="14" fill="#e6edf3">Medium: 59 (52.68%)</text>
+  <rect x="300.0" y="208.0" width="16" height="16" rx="3" fill="#2e7d32"/><text x="324.0" y="221.0" font-size="14" fill="#e6edf3">Low: 4 (3.57%)</text>
 </svg>

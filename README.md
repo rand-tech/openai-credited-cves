@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 113**
+**CURRENT CVE COUNT: 112**
 
 ## Distributions
 
@@ -53,7 +53,6 @@ This project is maintained on a best effort basis.
 | [CVE-2026-96445](https://www.cve.org/CVERecord?id=CVE-2026-96445) | 2026-09-23 | Red Hat | Red Hat Build of Keycloak | 6.8 |  | Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-94001](https://www.cve.org/CVERecord?id=CVE-2026-94001) | 2026-09-19 | Red Hat | Red Hat Build of Keycloak | 6.5 |  | Red Hat would like to thank Paul Bottinelli of Trail of Bits in collaboration with OpenAI for reporting this issue. |
 | [CVE-2026-90997](https://www.cve.org/CVERecord?id=CVE-2026-90997) | 2026-09-17 | Keycloak | Keycloak | 7.4 |  | Red Hat would like to thank Bruno Oliveira of IBM in collaboration with OpenAI for reporting this issue. |
-| [CVE-2026-89791](https://www.cve.org/CVERecord?id=CVE-2026-89791) | 2026-09-16 | Linux | Linux | 7.8 |  |  |
 | [CVE-2026-18212](https://www.cve.org/CVERecord?id=CVE-2026-18212) | 2026-09-16 | Red Hat | Red Hat build of Keycloak 26.4 | 7.5 |  | Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-92054](https://www.cve.org/CVERecord?id=CVE-2026-92054) | 2026-09-15 | Mozilla | Firefox | 8.8 |  | Amy Burnett of OpenAI |
 | [CVE-2026-18922](https://www.cve.org/CVERecord?id=CVE-2026-18922) | 2026-09-07 | Red Hat | Red Hat Directory Server 11.7 E4S for RHEL 8 | 9.8 |  | Red Hat would like to thank Chris Jarrett-Davies (OpenAI Security Research) for reporting this issue. |
