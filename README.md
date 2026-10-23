@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 117**
+**CURRENT CVE COUNT: 118**
 
 ## Distributions
 
@@ -36,6 +36,7 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-111497](https://www.cve.org/CVERecord?id=CVE-2026-111497) | 2026-10-22 | Google | Brotli | 9.2 |  | OpenAI Codex Security - Khai Tran and Sylvie Mayer |
 | [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Wiz \| Ryan at Calif.io \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
 | [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Ryan at Calif.io \| Wiz \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
 | [CVE-2026-94300](https://www.cve.org/CVERecord?id=CVE-2026-94300) | 2026-10-21 | ISC | BIND 9 | 8.1 |  | While this flaw was discovered in internal testing, ISC would like to thank Dave Aitel from OpenAI who independently discovered and responsibly reported the issue to ISC. |
