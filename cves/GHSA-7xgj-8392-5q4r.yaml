@@ -1,0 +1,12 @@
+cve: null
+ghsa: GHSA-7xgj-8392-5q4r
+date: '2026-10-23'
+vendor: pip
+product: fastmcp
+cvss: 6.8
+credit: '@rishid (reporter)'
+status: published
+cve_link: null
+ghsa_link: https://github.com/advisories/GHSA-7xgj-8392-5q4r
+notes: null
+auto_discovered: true
