@@ -1,5 +1,5 @@
 {
-  "last_run_date": "20261024",
+  "last_run_date": "20261025",
   "opened_finding_keys": [
     "+ mm-fix-address-wraparound-when-scanning-large-folio-ptes.patch added to mm-hotfixes-unstable branch",
     "+ mm-khugepaged-flush-deferred-unmaps-before-dropping-a-failed-folio.patch added to mm-hotfixes-unstable branch",
@@ -26,6 +26,7 @@
     "mm: fix address wraparound when scanning large folio",
     "mm: fix address wraparound when scanning large folio ptes",
     "mptcp: hold mp_join msk ref when cloning reqsk",
+    "net/sched: sch_qfq: prevent aggregate self-replacement",
     "net: sched: prevent scheduling deactivated qdiscs",
     "netfilter: nf_reject: initialize ipcb at inet ingress",
     "netlink: avoid hashing the network namespace pointer",
@@ -169,6 +170,7 @@
     "https://lore.kernel.org/all/CAHk-=wjouh66VCZjhUedb+wkRTWB0vsoDjU3N0huGsiYXQ5S0A@mail.gmail.com",
     "https://lore.kernel.org/all/CAL4Wiip1pwoyjOsCV2e9Bx7UJWY2mt+J28F3pc8huPEEVkavvA@mail.gmail.com",
     "https://lore.kernel.org/all/CAL4Wiipq9-tOvYxXuhcrJeQFd+ZySeipm1XcZVKSjSL75z8-HA@mail.gmail.com",
+    "https://lore.kernel.org/all/CAM0EoMkOj8zfwB8WuTEOxEzAoGONg=2ZODehVMBzbA5c+EebZA@mail.gmail.com",
     "https://lore.kernel.org/all/CAM0EoMm=KbZgcGqLHDFee3mM1GxuNCvAWObP_K4AxsGAoEAedg@mail.gmail.com",
     "https://lore.kernel.org/all/CAM0EoMn7EE+zFDis0e_QDkfY2U59QRi52izi4dgNNWnOv9Awtg@mail.gmail.com",
     "https://lore.kernel.org/all/CAN3w+PPqe9C8TcU4CHjwEE3tUG8k8MXXAHRQagb8iR4ehWbLLw@mail.gmail.com",
