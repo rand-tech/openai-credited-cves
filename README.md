@@ -37,8 +37,8 @@ This project is maintained on a best effort basis.
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CVE-2026-111497](https://www.cve.org/CVERecord?id=CVE-2026-111497) | 2026-10-22 | Google | Brotli | 9.2 |  | OpenAI Codex Security - Khai Tran and Sylvie Mayer |
-| [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Wiz \| Ryan at Calif.io \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
-| [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | 2026-10-21 | PHP Group | PHP | 9.2 |  | Ryan at Calif.io \| Wiz \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
+| [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | 2026-10-21 | PHP Group | PHP | 9.2 | ✅ | Wiz \| Ryan at Calif.io \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
+| [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | 2026-10-21 | PHP Group | PHP | 9.2 | ✅ | Ryan at Calif.io \| Wiz \| OpenAI \| Arnaud Le Blanc \| Ilija Tovilo \| Jakub Zelenka \| Nora Dossche |
 | [CVE-2026-94300](https://www.cve.org/CVERecord?id=CVE-2026-94300) | 2026-10-21 | ISC | BIND 9 | 8.1 |  | While this flaw was discovered in internal testing, ISC would like to thank Dave Aitel from OpenAI who independently discovered and responsibly reported the issue to ISC. |
 | [CVE-2026-107350](https://www.cve.org/CVERecord?id=CVE-2026-107350) | 2026-10-14 | n/a | PgBouncer | 8.8 |  | Thanks to Dave Aitel (@daveaitel-openai, OpenAI) for finding and reporting this issue. |
 | [CVE-2026-109733](https://www.cve.org/CVERecord?id=CVE-2026-109733) | 2026-10-13 | Mozilla | Firefox | 8.1 |  | Amy Burnett of OpenAI |
