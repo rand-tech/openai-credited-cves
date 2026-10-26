@@ -1,6 +1,6 @@
 {
   "last_fetch_timestamp": "2026-10-26T19:40:07.637Z",
-  "last_ghsa_modified": "2026-10-26T12:33:35Z",
+  "last_ghsa_modified": "2026-10-26T18:33:52Z",
   "pending_cve_ids": [],
   "pending_ghsa_ids": [],
   "seen_cve_ids": [
@@ -57,6 +57,7 @@
     "GHSA-crcq-c44m-c92x",
     "GHSA-f2x4-7hx3-gxfp",
     "GHSA-hcf6-9q9g-xx3c",
+    "GHSA-m6q9-jx43-w2vp",
     "GHSA-p92p-rxj5-7p2x",
     "GHSA-pr7f-p5mw-fc87",
     "GHSA-w53j-6pxf-r2vw",
