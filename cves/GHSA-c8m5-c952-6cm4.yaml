@@ -1,0 +1,12 @@
+cve: null
+ghsa: GHSA-c8m5-c952-6cm4
+date: '2026-10-27'
+vendor: rust
+product: rustls
+cvss: 4.0
+credit: ''
+status: published
+cve_link: null
+ghsa_link: https://github.com/advisories/GHSA-c8m5-c952-6cm4
+notes: null
+auto_discovered: true
