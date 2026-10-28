@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 159**
+**CURRENT CVE COUNT: 160**
 
 ## Distributions
 
@@ -36,6 +36,7 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-112375](https://www.cve.org/CVERecord?id=CVE-2026-112375) | 2026-10-28 | Apache Software Foundation | Apache Kafka |  |  | Arthur Chan <arthur.chan@adalogics.com>, Ada Logics and Anthropic Research \| OpenAI Codex Security - Amy Burnett and Khai Tran \| Mickael Maison <mickael.maison@gmail.com> \| Manikumar Reddy <manikumar.reddy@gmail.com> \| Chia-Ping Tsai <chia7712@gmail.com> |
 | [CVE-2026-118017](https://www.cve.org/CVERecord?id=CVE-2026-118017) | 2026-10-27 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-118016](https://www.cve.org/CVERecord?id=CVE-2026-118016) | 2026-10-27 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-118015](https://www.cve.org/CVERecord?id=CVE-2026-118015) | 2026-10-27 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
