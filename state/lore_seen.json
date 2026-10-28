@@ -1,5 +1,5 @@
 {
-  "last_run_date": "20261027",
+  "last_run_date": "20261028",
   "opened_finding_keys": [
     "+ mm-fix-address-wraparound-when-scanning-large-folio-ptes.patch added to mm-hotfixes-unstable branch",
     "+ mm-khugepaged-flush-deferred-unmaps-before-dropping-a-failed-folio.patch added to mm-hotfixes-unstable branch",
@@ -48,6 +48,7 @@
     "https://lore.kernel.org/all/0d2f9386-fe3f-4714-8204-9d6c710ac09d@linux.dev",
     "https://lore.kernel.org/all/179097489635.4079213.16506372444537724558.b4-ty@b4",
     "https://lore.kernel.org/all/179278367083.68413.17147250369624243185.xfs-lists-plaintext-resend@trailofbits.com",
+    "https://lore.kernel.org/all/179318172275.622019.2392717179120363996.git-patchwork-notify@kernel.org",
     "https://lore.kernel.org/all/1d850e66-2c8b-4912-829c-ab620de833e5@kernel.org",
     "https://lore.kernel.org/all/2026100301-daybed-eldercare-3d6d@gregkh",
     "https://lore.kernel.org/all/2026100307-liability-pranker-6a12@gregkh",
@@ -158,6 +159,7 @@
     "https://lore.kernel.org/all/54b5a63d-34fc-4bd8-beaf-19673c8b6ad7@kernel.org",
     "https://lore.kernel.org/all/55765FF3-18D7-424C-984D-81C316F323E1@nvidia.com",
     "https://lore.kernel.org/all/5848db18-9de3-437b-9967-162ced4f8cb9@linux.alibaba.com",
+    "https://lore.kernel.org/all/752bd947-78ae-463f-8d3a-ec4ed35cd9e8@kernel.org",
     "https://lore.kernel.org/all/87a4o51knt.ffs@fw13",
     "https://lore.kernel.org/all/87h5j4yxtw.wl-tiwai@suse.de",
     "https://lore.kernel.org/all/89E8831F-8877-48ED-A2DF-5128DEEF8C43@linux.dev",
