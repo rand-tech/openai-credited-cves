@@ -1,6 +1,6 @@
 {
   "last_fetch_timestamp": "2026-11-02T23:21:44.922Z",
-  "last_ghsa_modified": "2026-11-02T15:32:36Z",
+  "last_ghsa_modified": "2026-11-02T23:19:21Z",
   "pending_cve_ids": [],
   "pending_ghsa_ids": [],
   "seen_cve_ids": [
@@ -102,9 +102,11 @@
     "GHSA-2xv2-w8cq-5gxw",
     "GHSA-32hx-qqmp-8j8q",
     "GHSA-5v7c-xpfp-p65m",
+    "GHSA-6384-rh84-ww6f",
     "GHSA-6757-hggm-hp2w",
     "GHSA-7546-2qgp-jfhx",
     "GHSA-7vq9-r7c4-w548",
+    "GHSA-7xg6-2942-h668",
     "GHSA-7xgj-8392-5q4r",
     "GHSA-8397-8qf6-f2gm",
     "GHSA-c67j-w6g6-q2cm",
@@ -118,6 +120,7 @@
     "GHSA-h3rc-6mm3-gc2m",
     "GHSA-h3rc-j82p-2c3h",
     "GHSA-hcf6-9q9g-xx3c",
+    "GHSA-j246-8725-jrhc",
     "GHSA-j7qq-vr8c-xvw3",
     "GHSA-m6q9-jx43-w2vp",
     "GHSA-p92p-rxj5-7p2x",
@@ -126,6 +129,7 @@
     "GHSA-w53j-6pxf-r2vw",
     "GHSA-x2rj-828p-hx9m",
     "GHSA-x567-49g5-p4cf",
-    "GHSA-xc29-5cqv-36w6"
+    "GHSA-xc29-5cqv-36w6",
+    "GHSA-xg9f-qw22-p2qc"
   ]
 }
