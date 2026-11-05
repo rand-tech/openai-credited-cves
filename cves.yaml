@@ -282,7 +282,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117940
@@ -294,7 +294,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117939
@@ -306,7 +306,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117938
@@ -318,7 +318,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 7.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117937
@@ -330,7 +330,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117936
@@ -426,7 +426,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117921
@@ -438,7 +438,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: Amy Burnett of OpenAI
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117883
@@ -450,7 +450,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: Amy Burnett of OpenAI
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117882
@@ -462,7 +462,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: Amy Burnett of OpenAI
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117881
