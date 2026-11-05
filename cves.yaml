@@ -1,3 +1,17 @@
+- cve: CVE-2026-96453
+  ghsa: null
+  date: '2026-11-05'
+  vendor: Red Hat
+  product: Red Hat AMQ Broker 7
+  cvss: 8.0
+  credit: >-
+    Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-96453
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-112375
   ghsa: null
   date: '2026-10-28'
@@ -18,7 +32,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118017
@@ -30,7 +44,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118016
@@ -42,7 +56,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118015
@@ -54,7 +68,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118014
@@ -66,7 +80,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118013
@@ -78,7 +92,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118012
@@ -90,7 +104,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-118011
@@ -114,7 +128,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117954
@@ -126,7 +140,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117953
@@ -138,7 +152,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.1
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117952
@@ -150,7 +164,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117951
@@ -162,7 +176,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117950
@@ -174,7 +188,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117949
@@ -186,7 +200,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117948
@@ -198,7 +212,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117947
@@ -210,7 +224,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 9.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117946
@@ -222,7 +236,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 9.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117945
@@ -234,7 +248,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117944
@@ -246,7 +260,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117943
@@ -258,7 +272,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 7.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117942
@@ -270,7 +284,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117941
@@ -342,7 +356,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117935
@@ -354,7 +368,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 6.3
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117934
@@ -366,7 +380,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 5.4
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117933
@@ -378,7 +392,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117932
@@ -390,7 +404,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117931
@@ -402,7 +416,7 @@
   date: '2026-10-27'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-117930
