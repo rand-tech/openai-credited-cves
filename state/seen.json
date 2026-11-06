@@ -1,5 +1,5 @@
 {
-  "last_fetch_timestamp": "2026-11-05T23:29:21.631Z",
+  "last_fetch_timestamp": "2026-11-06T06:35:45.604Z",
   "last_ghsa_modified": "2026-11-05T23:34:59Z",
   "pending_cve_ids": [],
   "pending_ghsa_ids": [],
@@ -98,6 +98,7 @@
     "CVE-2026-94300",
     "CVE-2026-94386",
     "CVE-2026-95702",
+    "CVE-2026-96447",
     "CVE-2026-96453"
   ],
   "seen_ghsa_ids": [
