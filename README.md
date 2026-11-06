@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 161**
+**CURRENT CVE COUNT: 162**
 
 ## Distributions
 
@@ -36,6 +36,7 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-96447](https://www.cve.org/CVERecord?id=CVE-2026-96447) | 2026-11-06 | Red Hat | Red Hat Build of Keycloak | 4.2 |  | Red Hat would like to thank Bruno Oliveira of IBM in collaboration with OpenAI for reporting this issue. |
 | [CVE-2026-96453](https://www.cve.org/CVERecord?id=CVE-2026-96453) | 2026-11-05 | Red Hat | Red Hat AMQ Broker 7 | 8.0 |  | Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-112375](https://www.cve.org/CVERecord?id=CVE-2026-112375) | 2026-10-28 | Apache Software Foundation | Apache Kafka | 6.5 |  | Arthur Chan <arthur.chan@adalogics.com>, Ada Logics and Anthropic Research \| OpenAI Codex Security - Amy Burnett and Khai Tran \| Mickael Maison <mickael.maison@gmail.com> \| Manikumar Reddy <manikumar.reddy@gmail.com> \| Chia-Ping Tsai <chia7712@gmail.com> |
 | [CVE-2026-118017](https://www.cve.org/CVERecord?id=CVE-2026-118017) | 2026-10-27 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
