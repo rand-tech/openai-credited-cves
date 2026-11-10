@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 162**
+**CURRENT CVE COUNT: 188**
 
 ## Distributions
 
@@ -36,6 +36,32 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-124904](https://www.cve.org/CVERecord?id=CVE-2026-124904) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124899](https://www.cve.org/CVERecord?id=CVE-2026-124899) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124898](https://www.cve.org/CVERecord?id=CVE-2026-124898) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124897](https://www.cve.org/CVERecord?id=CVE-2026-124897) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124896](https://www.cve.org/CVERecord?id=CVE-2026-124896) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124895](https://www.cve.org/CVERecord?id=CVE-2026-124895) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124893](https://www.cve.org/CVERecord?id=CVE-2026-124893) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124892](https://www.cve.org/CVERecord?id=CVE-2026-124892) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124891](https://www.cve.org/CVERecord?id=CVE-2026-124891) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124890](https://www.cve.org/CVERecord?id=CVE-2026-124890) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124889](https://www.cve.org/CVERecord?id=CVE-2026-124889) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124888](https://www.cve.org/CVERecord?id=CVE-2026-124888) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124887](https://www.cve.org/CVERecord?id=CVE-2026-124887) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124886](https://www.cve.org/CVERecord?id=CVE-2026-124886) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124885](https://www.cve.org/CVERecord?id=CVE-2026-124885) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124884](https://www.cve.org/CVERecord?id=CVE-2026-124884) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124883](https://www.cve.org/CVERecord?id=CVE-2026-124883) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124882](https://www.cve.org/CVERecord?id=CVE-2026-124882) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124881](https://www.cve.org/CVERecord?id=CVE-2026-124881) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124880](https://www.cve.org/CVERecord?id=CVE-2026-124880) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124879](https://www.cve.org/CVERecord?id=CVE-2026-124879) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124878](https://www.cve.org/CVERecord?id=CVE-2026-124878) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124877](https://www.cve.org/CVERecord?id=CVE-2026-124877) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124872](https://www.cve.org/CVERecord?id=CVE-2026-124872) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124858](https://www.cve.org/CVERecord?id=CVE-2026-124858) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | Amy Burnett of OpenAI |
+| [CVE-2026-115791](https://www.cve.org/CVERecord?id=CVE-2026-115791) | 2026-11-10 | Python Software Foundation | CPython | 5.3 |  | Jelle Zijlstra (https://github.com/jelle-openai) \| Victor Stinner (https://github.com/vstinner) \| Ethan Furman (https://github.com/ethanfurman) \| Kirill Podoprigora (https://github.com/Eclips4) \| Seth Larson (https://github.com/sethmlarson) |
 | [CVE-2026-96447](https://www.cve.org/CVERecord?id=CVE-2026-96447) | 2026-11-06 | Red Hat | Red Hat Build of Keycloak | 4.2 |  | Red Hat would like to thank Bruno Oliveira of IBM in collaboration with OpenAI for reporting this issue. |
 | [CVE-2026-96453](https://www.cve.org/CVERecord?id=CVE-2026-96453) | 2026-11-05 | Red Hat | Red Hat AMQ Broker 7 | 8.0 |  | Red Hat would like to thank Paul Bottinelli (Trail of Bits in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-112375](https://www.cve.org/CVERecord?id=CVE-2026-112375) | 2026-10-28 | Apache Software Foundation | Apache Kafka | 6.5 |  | Arthur Chan <arthur.chan@adalogics.com>, Ada Logics and Anthropic Research \| OpenAI Codex Security - Amy Burnett and Khai Tran \| Mickael Maison <mickael.maison@gmail.com> \| Manikumar Reddy <manikumar.reddy@gmail.com> \| Chia-Ping Tsai <chia7712@gmail.com> |

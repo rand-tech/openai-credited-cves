@@ -1,3 +1,318 @@
+- cve: CVE-2026-124904
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124904
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124899
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124899
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124898
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124898
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124897
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124897
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124896
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: null
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124896
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124895
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124895
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124893
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124893
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124892
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124892
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124891
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124891
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124890
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124890
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124889
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124889
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124888
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124888
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124887
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124887
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124886
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: null
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124886
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124885
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124885
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124884
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124884
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124883
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124883
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124882
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124882
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124881
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124881
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124880
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124880
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124879
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: null
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124879
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124878
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124878
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124877
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124877
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124872
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: OpenAI Codex Security (kylebot)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124872
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-124858
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Mozilla
+  product: Firefox
+  cvss: 8.8
+  credit: Amy Burnett of OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124858
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-115791
+  ghsa: null
+  date: '2026-11-10'
+  vendor: Python Software Foundation
+  product: CPython
+  cvss: 5.3
+  credit: >-
+    Jelle Zijlstra (https://github.com/jelle-openai) | Victor Stinner (https://github.com/vstinner) |
+    Ethan Furman (https://github.com/ethanfurman) | Kirill Podoprigora (https://github.com/Eclips4) |
+    Seth Larson (https://github.com/sethmlarson)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-115791
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-96447
   ghsa: null
   date: '2026-11-06'
