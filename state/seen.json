@@ -1,6 +1,6 @@
 {
   "last_fetch_timestamp": "2026-11-10T20:31:56.342Z",
-  "last_ghsa_modified": "2026-11-10T20:57:19Z",
+  "last_ghsa_modified": "2026-11-10T21:33:59Z",
   "pending_cve_ids": [],
   "pending_ghsa_ids": [],
   "seen_cve_ids": [
@@ -144,6 +144,7 @@
     "CVE-2026-97177"
   ],
   "seen_ghsa_ids": [
+    "GHSA-298x-8vc9-pjwx",
     "GHSA-2mhj-6r3c-c9xj",
     "GHSA-2wqp-q3c6-ccj5",
     "GHSA-2xv2-w8cq-5gxw",
