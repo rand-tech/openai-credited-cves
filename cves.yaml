@@ -1,3 +1,75 @@
+- cve: CVE-2026-123829
+  ghsa: null
+  date: '2026-11-11'
+  vendor: nodejs
+  product: node
+  cvss: 2.5
+  credit: Trail of Bits (OpenAI) | RafaelGSS | UlisesGascon | aduh95
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-123829
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-0331
+  ghsa: null
+  date: '2026-11-11'
+  vendor: Palo Alto Networks
+  product: Cloud NGFW
+  cvss: 6.6
+  credit: OpenAI | Rotem Bar (internal reporter)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-0331
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-0329
+  ghsa: null
+  date: '2026-11-11'
+  vendor: Palo Alto Networks
+  product: Cloud NGFW
+  cvss: 4.6
+  credit: OpenAI | Rotem Bar (internal reporter) | Ben Nott (internal reporter)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-0329
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-0328
+  ghsa: null
+  date: '2026-11-11'
+  vendor: Palo Alto Networks
+  product: Cloud NGFW
+  cvss: 2.7
+  credit: OpenAI | Rotem Bar (internal reporter)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-0328
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-0327
+  ghsa: null
+  date: '2026-11-11'
+  vendor: Palo Alto Networks
+  product: Cloud NGFW
+  cvss: 2.3
+  credit: OpenAI
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-0327
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-0326
+  ghsa: null
+  date: '2026-11-11'
+  vendor: Palo Alto Networks
+  product: Cloud NGFW
+  cvss: 1.7
+  credit: OpenAI | Rotem Bar (internal reporter) | Ben Nott (internal reporter)
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-0326
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-124904
   ghsa: null
   date: '2026-11-10'

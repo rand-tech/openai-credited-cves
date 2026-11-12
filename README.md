@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 188**
+**CURRENT CVE COUNT: 194**
 
 ## Distributions
 
@@ -36,6 +36,12 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-123829](https://www.cve.org/CVERecord?id=CVE-2026-123829) | 2026-11-11 | nodejs | node | 2.5 |  | Trail of Bits (OpenAI) \| RafaelGSS \| UlisesGascon \| aduh95 |
+| [CVE-2026-0331](https://www.cve.org/CVERecord?id=CVE-2026-0331) | 2026-11-11 | Palo Alto Networks | Cloud NGFW | 6.6 |  | OpenAI \| Rotem Bar (internal reporter) |
+| [CVE-2026-0329](https://www.cve.org/CVERecord?id=CVE-2026-0329) | 2026-11-11 | Palo Alto Networks | Cloud NGFW | 4.6 |  | OpenAI \| Rotem Bar (internal reporter) \| Ben Nott (internal reporter) |
+| [CVE-2026-0328](https://www.cve.org/CVERecord?id=CVE-2026-0328) | 2026-11-11 | Palo Alto Networks | Cloud NGFW | 2.7 |  | OpenAI \| Rotem Bar (internal reporter) |
+| [CVE-2026-0327](https://www.cve.org/CVERecord?id=CVE-2026-0327) | 2026-11-11 | Palo Alto Networks | Cloud NGFW | 2.3 |  | OpenAI |
+| [CVE-2026-0326](https://www.cve.org/CVERecord?id=CVE-2026-0326) | 2026-11-11 | Palo Alto Networks | Cloud NGFW | 1.7 |  | OpenAI \| Rotem Bar (internal reporter) \| Ben Nott (internal reporter) |
 | [CVE-2026-124904](https://www.cve.org/CVERecord?id=CVE-2026-124904) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124899](https://www.cve.org/CVERecord?id=CVE-2026-124899) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124898](https://www.cve.org/CVERecord?id=CVE-2026-124898) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
