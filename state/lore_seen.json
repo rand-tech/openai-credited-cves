@@ -1,5 +1,5 @@
 {
-  "last_run_date": "20261112",
+  "last_run_date": "20261113",
   "opened_finding_keys": [
     "+ mm-fix-address-wraparound-when-scanning-large-folio-ptes.patch added to mm-hotfixes-unstable branch",
     "+ mm-khugepaged-flush-deferred-unmaps-before-dropping-a-failed-folio.patch added to mm-hotfixes-unstable branch",
@@ -467,6 +467,13 @@
     "https://lore.kernel.org/all/20261111201210.4044623-1-sashal@kernel.org",
     "https://lore.kernel.org/all/20261111215329.4056116-1-sashal@kernel.org",
     "https://lore.kernel.org/all/20261111223808.4136567-1-sashal@kernel.org",
+    "https://lore.kernel.org/all/20261112200100.519879-1-kuba@kernel.org",
+    "https://lore.kernel.org/all/20261112202259.1603271-1-doebel@amazon.de",
+    "https://lore.kernel.org/all/20261112202311.1603376-1-doebel@amazon.de",
+    "https://lore.kernel.org/all/20261112202319.1603433-1-doebel@amazon.de",
+    "https://lore.kernel.org/all/20261112213129.3829777-1-sashal@kernel.org",
+    "https://lore.kernel.org/all/20261112214412.3870882-1-sashal@kernel.org",
+    "https://lore.kernel.org/all/20261112215659.3919615-1-sashal@kernel.org",
     "https://lore.kernel.org/all/24287f78-a962-470f-99eb-2624d8ac3bad@linux.dev",
     "https://lore.kernel.org/all/24b80e47c623063ee9d717ff051a746b9d226a86.camel@kernel.org",
     "https://lore.kernel.org/all/2d8bd17f-3d1d-452c-8e81-716ca18a72ca@linux.dev",
