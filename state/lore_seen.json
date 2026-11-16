@@ -1,5 +1,5 @@
 {
-  "last_run_date": "20261115",
+  "last_run_date": "20261116",
   "opened_finding_keys": [
     "+ mm-fix-address-wraparound-when-scanning-large-folio-ptes.patch added to mm-hotfixes-unstable branch",
     "+ mm-khugepaged-flush-deferred-unmaps-before-dropping-a-failed-folio.patch added to mm-hotfixes-unstable branch",
@@ -88,6 +88,7 @@
     "udf: validate extent partition references in udf_current_aext()",
     "udp: check frag_list ip family before using skb_segment_list()",
     "vfio: publish the container after all fallible initialization",
+    "vsock: only undo ss_connecting when",
     "wifi: cfg80211: reject overflowing scan frequencies",
     "xarray: initialize the offset of new root nodes",
     "xfrm: serialize sa activation with state deletion"
@@ -509,6 +510,7 @@
     "https://lore.kernel.org/all/24287f78-a962-470f-99eb-2624d8ac3bad@linux.dev",
     "https://lore.kernel.org/all/24b80e47c623063ee9d717ff051a746b9d226a86.camel@kernel.org",
     "https://lore.kernel.org/all/2d8bd17f-3d1d-452c-8e81-716ca18a72ca@linux.dev",
+    "https://lore.kernel.org/all/32ccacbe-e0fc-4cb8-a6c0-a0446b4f7ce1@ovn.org",
     "https://lore.kernel.org/all/3866125d-65f9-4a45-bae2-a408a0d010b0@gmail.com",
     "https://lore.kernel.org/all/40018dc8-0452-4dfa-95eb-2c401e117c39@kernel.org",
     "https://lore.kernel.org/all/452bd8cbadba19ce86cdce4c339dadb0d977209b.camel@kernel.org",
@@ -517,6 +519,7 @@
     "https://lore.kernel.org/all/5848db18-9de3-437b-9967-162ced4f8cb9@linux.alibaba.com",
     "https://lore.kernel.org/all/5ae8a59a-93a1-4b51-85a6-17ccc07eda11@linux.dev",
     "https://lore.kernel.org/all/61bb0fc9-d629-4987-ad18-c5eb46074dbf@kernel.dk",
+    "https://lore.kernel.org/all/6bdfe6f7-aba8-4fb8-ac24-62fe020e1422@rbox.co",
     "https://lore.kernel.org/all/752bd947-78ae-463f-8d3a-ec4ed35cd9e8@kernel.org",
     "https://lore.kernel.org/all/87a4o51knt.ffs@fw13",
     "https://lore.kernel.org/all/87h5j4yxtw.wl-tiwai@suse.de",
@@ -542,6 +545,7 @@
     "https://lore.kernel.org/all/CAHC9VhT1oFLhRd42SVuyS1NX=t9Tn6GWLddEX1iF6sycfkdtRg@mail.gmail.com",
     "https://lore.kernel.org/all/CAHk-=wgAHC=GJMQm7DM0iJgUCsaMpYJ1zO2FW_+FQLcGzfYZzg@mail.gmail.com",
     "https://lore.kernel.org/all/CAHk-=wgYMaZik+wZYTE1bv7x5OUNsorG0WU16gFSZpX4TomMbQ@mail.gmail.com",
+    "https://lore.kernel.org/all/CAHk-=wguRDYogK6+8yabjOhFPEfEpOfC=hG2GKfsCBXaKBL5=A@mail.gmail.com",
     "https://lore.kernel.org/all/CAHk-=wgwnBm2zDdRM7u016NVHkv9KqbZW7AZ=8wZrqGyv_V+5A@mail.gmail.com",
     "https://lore.kernel.org/all/CAHk-=wjouh66VCZjhUedb+wkRTWB0vsoDjU3N0huGsiYXQ5S0A@mail.gmail.com",
     "https://lore.kernel.org/all/CAL4Wiip1pwoyjOsCV2e9Bx7UJWY2mt+J28F3pc8huPEEVkavvA@mail.gmail.com",
