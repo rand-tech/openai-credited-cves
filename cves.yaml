@@ -153,7 +153,7 @@
   date: '2026-11-10'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124896
@@ -261,7 +261,7 @@
   date: '2026-11-10'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124886
@@ -345,7 +345,7 @@
   date: '2026-11-10'
   vendor: Mozilla
   product: Firefox
-  cvss: null
+  cvss: 8.8
   credit: OpenAI Codex Security (kylebot)
   status: published
   cve_link: https://www.cve.org/CVERecord?id=CVE-2026-124879

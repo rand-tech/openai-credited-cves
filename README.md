@@ -48,7 +48,7 @@ This project is maintained on a best effort basis.
 | [CVE-2026-124899](https://www.cve.org/CVERecord?id=CVE-2026-124899) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124898](https://www.cve.org/CVERecord?id=CVE-2026-124898) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124897](https://www.cve.org/CVERecord?id=CVE-2026-124897) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
-| [CVE-2026-124896](https://www.cve.org/CVERecord?id=CVE-2026-124896) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124896](https://www.cve.org/CVERecord?id=CVE-2026-124896) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124895](https://www.cve.org/CVERecord?id=CVE-2026-124895) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124893](https://www.cve.org/CVERecord?id=CVE-2026-124893) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124892](https://www.cve.org/CVERecord?id=CVE-2026-124892) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
@@ -57,14 +57,14 @@ This project is maintained on a best effort basis.
 | [CVE-2026-124889](https://www.cve.org/CVERecord?id=CVE-2026-124889) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124888](https://www.cve.org/CVERecord?id=CVE-2026-124888) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124887](https://www.cve.org/CVERecord?id=CVE-2026-124887) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
-| [CVE-2026-124886](https://www.cve.org/CVERecord?id=CVE-2026-124886) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124886](https://www.cve.org/CVERecord?id=CVE-2026-124886) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124885](https://www.cve.org/CVERecord?id=CVE-2026-124885) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124884](https://www.cve.org/CVERecord?id=CVE-2026-124884) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124883](https://www.cve.org/CVERecord?id=CVE-2026-124883) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124882](https://www.cve.org/CVERecord?id=CVE-2026-124882) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124881](https://www.cve.org/CVERecord?id=CVE-2026-124881) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124880](https://www.cve.org/CVERecord?id=CVE-2026-124880) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
-| [CVE-2026-124879](https://www.cve.org/CVERecord?id=CVE-2026-124879) | 2026-11-10 | Mozilla | Firefox |  |  | OpenAI Codex Security (kylebot) |
+| [CVE-2026-124879](https://www.cve.org/CVERecord?id=CVE-2026-124879) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124878](https://www.cve.org/CVERecord?id=CVE-2026-124878) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124877](https://www.cve.org/CVERecord?id=CVE-2026-124877) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
 | [CVE-2026-124872](https://www.cve.org/CVERecord?id=CVE-2026-124872) | 2026-11-10 | Mozilla | Firefox | 8.8 |  | OpenAI Codex Security (kylebot) |
