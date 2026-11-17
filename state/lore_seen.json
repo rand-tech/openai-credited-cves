@@ -1,5 +1,5 @@
 {
-  "last_run_date": "20261116",
+  "last_run_date": "20261117",
   "opened_finding_keys": [
     "+ mm-fix-address-wraparound-when-scanning-large-folio-ptes.patch added to mm-hotfixes-unstable branch",
     "+ mm-khugepaged-flush-deferred-unmaps-before-dropping-a-failed-folio.patch added to mm-hotfixes-unstable branch",
@@ -89,6 +89,7 @@
     "udp: check frag_list ip family before using skb_segment_list()",
     "vfio: publish the container after all fallible initialization",
     "vsock: only undo ss_connecting when",
+    "vsock: only undo ss_connecting when connect() fails",
     "wifi: cfg80211: reject overflowing scan frequencies",
     "xarray: initialize the offset of new root nodes",
     "xfrm: serialize sa activation with state deletion"
@@ -507,6 +508,10 @@
     "https://lore.kernel.org/all/20261113235019.74384-1-kylebot@openai.com",
     "https://lore.kernel.org/all/20261114050807.3044739-2-sashal@kernel.org",
     "https://lore.kernel.org/all/20261114051414.3056118-3-sashal@kernel.org",
+    "https://lore.kernel.org/all/20261116-vsock-connect-close-v1-1-43fb125973dd@meta.com",
+    "https://lore.kernel.org/all/2026111716-overstate-decal-eac4@gregkh",
+    "https://lore.kernel.org/all/2026111724-motivate-lifting-94f1@gregkh",
+    "https://lore.kernel.org/all/2026111729-brim-nest-fa62@gregkh",
     "https://lore.kernel.org/all/24287f78-a962-470f-99eb-2624d8ac3bad@linux.dev",
     "https://lore.kernel.org/all/24b80e47c623063ee9d717ff051a746b9d226a86.camel@kernel.org",
     "https://lore.kernel.org/all/2d8bd17f-3d1d-452c-8e81-716ca18a72ca@linux.dev",
@@ -609,6 +614,8 @@
     "https://lore.kernel.org/all/auzoPfpxVDZx7Um2@google.com",
     "https://lore.kernel.org/all/avK4i8v3takAhR6s@google.com",
     "https://lore.kernel.org/all/avKxNfqPgY6roDJy@com-75606",
+    "https://lore.kernel.org/all/avu1igVm0ZpwRuWB@devvm29614.prn0.facebook.com",
+    "https://lore.kernel.org/all/avusfpnZuzMV3WxB@devvm29614.prn0.facebook.com",
     "https://lore.kernel.org/all/b74oow6bhwdreed4fl55vjyllg6haqew3wetvfpep3saeu4rra@cr6un3h2yohg",
     "https://lore.kernel.org/all/b8d458c7-b9be-4d89-be48-940897695e6d@linux.dev",
     "https://lore.kernel.org/all/be4ec40b-ed32-41e3-b564-2acfc63f651f@ovn.org",
