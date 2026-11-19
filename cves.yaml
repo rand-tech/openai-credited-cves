@@ -1,3 +1,17 @@
+- cve: CVE-2026-132144
+  ghsa: null
+  date: '2026-11-18'
+  vendor: misp
+  product: misp
+  cvss: 8.3
+  credit: >-
+    Francois-Xavier Stellamans from the NATO Cyber Security Centre with OpenAI Daybreak support (using
+    GPT5.6-Cyber) | iglocska | Claude Opus 5.5
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-132144
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-116306
   ghsa: null
   date: '2026-11-12'

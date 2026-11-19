@@ -3,7 +3,7 @@
 ## Overview
 Tracking vulnerabilities that credit OpenAI researchers, including OpenAI Security Research, Codex Security, and work done in collaboration with OpenAI.
 
-**CURRENT CVE COUNT: 196**
+**CURRENT CVE COUNT: 197**
 
 ## Distributions
 
@@ -36,6 +36,7 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-132144](https://www.cve.org/CVERecord?id=CVE-2026-132144) | 2026-11-18 | misp | misp | 8.3 |  | Francois-Xavier Stellamans from the NATO Cyber Security Centre with OpenAI Daybreak support (using GPT5.6-Cyber) \| iglocska \| Claude Opus 5.5 |
 | [CVE-2026-116306](https://www.cve.org/CVERecord?id=CVE-2026-116306) | 2026-11-12 | n/a | PostgreSQL | 8.8 |  | The PostgreSQL project thanks OpenAI Codex Security, Bronson Yen, and Mehmet D. INCE for reporting this problem. |
 | [CVE-2026-6460](https://www.cve.org/CVERecord?id=CVE-2026-6460) | 2026-11-12 | n/a | PostgreSQL | 8.8 |  | The PostgreSQL project thanks Andrew Gierth, Alexander Lakhin, Francesco Verardi, Hcamael, Tomer Fichman, OpenAI Security Research Team, Mehmet Ince @mdisec, Bryan Green, Sumedh Pathak, Nicholas Carlini, Sergey Shinderuk, Yuxiao Guo, Nikhil Sontakke, Stephan Lipp, and Daniel Bakker for reporting this problem. |
 | [CVE-2026-123829](https://www.cve.org/CVERecord?id=CVE-2026-123829) | 2026-11-11 | nodejs | node | 2.5 |  | Trail of Bits (OpenAI) \| RafaelGSS \| UlisesGascon \| aduh95 |
