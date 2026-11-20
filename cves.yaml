@@ -1,3 +1,29 @@
+- cve: CVE-2026-99583
+  ghsa: GHSA-pgrx-5j3p-phxc
+  date: '2026-11-20'
+  vendor: ''
+  product: ''
+  cvss: null
+  credit: ''
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-99583
+  ghsa_link: https://github.com/advisories/GHSA-pgrx-5j3p-phxc
+  notes: null
+  auto_discovered: true
+- cve: CVE-2026-133430
+  ghsa: null
+  date: '2026-11-19'
+  vendor: Red Hat
+  product: Red Hat Build of Keycloak
+  cvss: 5.4
+  credit: >-
+    Red Hat would like to thank Bruno Oliveira - abstractj (in collaboration with OpenAI) for reporting
+    this issue.
+  status: published
+  cve_link: https://www.cve.org/CVERecord?id=CVE-2026-133430
+  ghsa_link: null
+  notes: null
+  auto_discovered: true
 - cve: CVE-2026-132144
   ghsa: null
   date: '2026-11-18'
