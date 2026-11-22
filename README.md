@@ -36,7 +36,7 @@ This project is maintained on a best effort basis.
 <!-- BEGIN_CVE_TABLE -->
 | CVE | Date | Vendor | Product | CVSS | KEV | Credit |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CVE-2026-99583](https://www.cve.org/CVERecord?id=CVE-2026-99583) | 2026-11-20 |  |  |  |  |  |
+| [CVE-2026-99583](https://www.cve.org/CVERecord?id=CVE-2026-99583) | 2026-11-20 |  |  | 7.8 |  |  |
 | [CVE-2026-133430](https://www.cve.org/CVERecord?id=CVE-2026-133430) | 2026-11-19 | Red Hat | Red Hat Build of Keycloak | 5.4 |  | Red Hat would like to thank Bruno Oliveira - abstractj (in collaboration with OpenAI) for reporting this issue. |
 | [CVE-2026-132144](https://www.cve.org/CVERecord?id=CVE-2026-132144) | 2026-11-18 | misp | misp | 8.3 |  | Francois-Xavier Stellamans from the NATO Cyber Security Centre with OpenAI Daybreak support (using GPT5.6-Cyber) \| iglocska \| Claude Opus 5.5 |
 | [CVE-2026-116306](https://www.cve.org/CVERecord?id=CVE-2026-116306) | 2026-11-12 | n/a | PostgreSQL | 8.8 |  | The PostgreSQL project thanks OpenAI Codex Security, Bronson Yen, and Mehmet D. INCE for reporting this problem. |
